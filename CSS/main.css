@@ -12,10 +12,8 @@ body{
     background-color: #033540;
     margin: 0 0 0 0 ;
     color: white;
-    font-family: 'Arvo',sans-serif serif;
     font-size: 1rem;
     padding: 1rem;
-    font-size:0.95rem;
 }
 .title{
   font-family: 'Montserrat', sans-serif;
@@ -389,9 +387,23 @@ li{
  .Services{
   max-width: 100%;
   margin: 0;
-  display: flex;
+
 
  }
+
+.tittle-services {
+  margin-top: 2rem;
+}
+
+.tittle-services:hover{
+
+}
+
+.cards-services{
+  display: flex;
+}
+
+
 #card-Services {
   width: 30%;
   background-color: #015366;
@@ -422,9 +434,21 @@ li{
 .Card-service-link:hover{
   text-decoration: none;
   color: rgb(229, 255, 0);
-
+  margin-left: 0.4rem; 
+  transition: 0.2s;
+  text-shadow:  1px 0 5px rgb(229, 255, 0);
+  
 } 
 
+.Education{
+
+}
+
+.roadmap-img{
+  width: 50%;
+  float: right;
+  margin-right: 2rem;
+}
 
 
 
