@@ -6,13 +6,14 @@
   padding: 0rem;
   margin: 0rem;
   font-family: 'Montserrat', sans-serif;
+
 }
 
 body{
     background-color: #033540;
     margin: 0 0 0 0 ;
     color: white;
-    font-size: 1rem;
+    font-size: 14px;
     padding: 1rem;
 }
 .title{
@@ -373,8 +374,7 @@ li{
  }
 
 .info-list li{
-  font-size: 1.1rem;
-  margin: 0 2rem;
+  margin: 0 1rem;
   text-align: center;
 }
 
@@ -439,15 +439,73 @@ li{
   text-shadow:  1px 0 5px rgb(229, 255, 0);
   
 } 
+.history{
+  display: flex;
+}
+.info-education{
+  display: flex;
+}
 
-.Education{
+.info-education .card  p {
+  opacity: 80%;
+  
+}
+
+
+.info-education #arrow-card{
+  position: relative;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 20px solid #015366;
+  margin-right: 10px;
+  left: -17px;
+  margin-top: 10px;
+}
+
+.info-education #cicle-icon-card{
+  color: rgb(229, 255, 0);
+  margin-top: 16px;
+}
+
+
+.history .info-education .card{
+  background-color:#015366;
+  color: white;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  width: fit-content;
+}
+
+.card-header-info-education{
+  display: flex;  
+  margin-bottom: 0;
+}
+
+.card-header-info-education >h5{
+  font-size: 17px;
+  margin-top: 11px;
+  margin-bottom: 0px;
+}
+
+
+.card-header-info-education >p{
+  opacity: 50%;
+  border: solid 0px;
+  background-color: #033540;
+  border-radius: 20px;
+  padding:8px;
+  margin-left: 40px;
+}
+
+.sub-tittle-card{
 
 }
 
-.roadmap-img{
-  width: 50%;
-  float: right;
-  margin-right: 2rem;
+.roadmap{
+  padding: 0rem 1rem;
 }
 
 
