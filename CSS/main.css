@@ -464,9 +464,24 @@ li{
   margin-top: 10px;
 }
 
+.education-img{
+  display: flex;
+}
+
+.circle-icon-container{
+  background-color: #015366;
+  width: 0.5rem;
+  height: 17.6rem;
+  border-radius: 1rem;
+}
+
+
 .info-education #cicle-icon-card{
   color: rgb(229, 255, 0);
   margin-top: 16px;
+  position: relative;
+  right: 0.1rem;
+  top: 1rem;
 }
 
 
