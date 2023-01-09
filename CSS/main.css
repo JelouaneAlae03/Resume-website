@@ -389,8 +389,6 @@ li{
  .Services{
   max-width: 100%;
   margin: 0;
-
-
  }
 
 .tittle-services {
@@ -407,10 +405,10 @@ li{
 
 
 #card-Services {
-  width: 30%;
   background-color: #015366;
   padding: 2rem 2rem;
   margin-right: 2.5rem;
+  width: fit-content;
 }
 
 
@@ -507,12 +505,7 @@ li{
   margin-bottom: 0px;
 }
 
-.swiper-slide{
-}
 
-.swiper-pagination{
-margin-top: 100px;
-}
 
 .card-header-info-education >p{
   opacity: 50%;
@@ -523,25 +516,24 @@ margin-top: 100px;
   margin-left: 40px;
 }
 .cards-contianer{
-  width: 40%;
-  max-width: 60rem;
+  max-width: 74rem;
+  box-sizing: border-box;
+  width: fit-content;
 }
 .cards-project{
   display: flex;
-  width: fit-content;
-  max-width: 55rem;
+  max-width: 100%;
 }
 
 .cards-project .card {
   background-color: #015366;
-  margin: 0.15rem; 
-
+  margin: 0.15rem;  
+  max-width: fit-content;
 }
 
 .cards-project .card .card-img{
   border-radius: 2rem;
   width: 100%;
-  object-fit: cover;
   padding: 1rem;
 }
 
@@ -559,4 +551,52 @@ margin-top: 100px;
   /* display: flex;
   margin: 0 auto; */
   
+}
+
+.recommendation-container{
+  max-width: 100%;
+}
+
+.recommendation-container .tittle-services h4{
+  margin-bottom: 2rem;
+}
+
+.Recommendations-cards{
+  max-width: 74rem;
+  position: relative;
+  box-sizing: border-box;
+  width: fit-content;
+}
+
+#card-Recommendations-container{
+  width: fit-content;
+}
+#card-Recommendations-container img{
+  width: 10%;
+  position: absolute;
+  border-radius: 10rem;
+  top: -1rem;
+  left: 80%;
+}
+
+#card-Recommendations-container{
+  width: 50%;
+  background-color:#015366;
+  padding: 1rem;
+}
+
+.name-profession h2{
+  color: rgb(229, 255, 0);
+  font-size: 1.2rem;
+}
+
+#card-Recommendations-container p{
+  opacity: 80%;
+}
+
+#card-Recommendations-container .etoile{
+  color:rgb(229, 255, 0) ;
+}
+.name-profession p{
+  font-style: italic;
 }
