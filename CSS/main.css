@@ -6,7 +6,7 @@
   padding: 0rem;
   margin: 0rem;
   font-family: 'Montserrat', sans-serif;
-
+  box-sizing: border-box;
 }
 
 body{
@@ -266,7 +266,9 @@ li{
   letter-spacing: 0.1rem;
   font-style: bold;
 }
-
+.cv-link i {
+  color: rgb(229, 255, 0);
+}
 .page{
   display: flex;
 }
@@ -505,6 +507,12 @@ li{
   margin-bottom: 0px;
 }
 
+.swiper-slide{
+}
+
+.swiper-pagination{
+margin-top: 100px;
+}
 
 .card-header-info-education >p{
   opacity: 50%;
@@ -514,18 +522,41 @@ li{
   padding:8px;
   margin-left: 40px;
 }
+.cards-contianer{
+  width: 40%;
+  max-width: 60rem;
+}
+.cards-project{
+  display: flex;
+  width: fit-content;
+  max-width: 55rem;
+}
 
-.sub-tittle-card{
+.cards-project .card {
+  background-color: #015366;
+  margin: 0.15rem; 
 
 }
 
-.roadmap{
-  padding: 0rem 1rem;
+.cards-project .card .card-img{
+  border-radius: 2rem;
+  width: 100%;
+  object-fit: cover;
+  padding: 1rem;
 }
 
+.cards-project .card h2{
+  font-size: 1.3rem;
+  cursor: pointer;
+}
 
+.cards-project .card p{
+  padding: 0rem 1rem 1rem 1rem;
+  opacity: 80%;
+}
 
-
-
-
-
+.technology-project-card{
+  /* display: flex;
+  margin: 0 auto; */
+  
+}
