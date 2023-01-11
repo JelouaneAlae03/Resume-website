@@ -392,7 +392,8 @@ li{
  }
 
 .tittle-services {
-  margin-top: 2rem;
+  margin-top:2.5rem;
+  margin-bottom:1rem;
 }
 
 .tittle-services:hover{
@@ -522,7 +523,7 @@ li{
 }
 .cards-project{
   display: flex;
-  max-width: 100%;
+  justify-content: space-between;
 }
 
 .cards-project .card {
@@ -600,3 +601,47 @@ li{
 .name-profession p{
   font-style: italic;
 }
+
+.contact-us-part{
+  max-width: 100%;
+}
+.contact-us-cards{
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-us-cards .card{
+  padding: 3rem 2rem;
+  background-color: #015366;
+  margin: 1rem; 
+  width: 100%;
+}
+
+.contact-us-card{
+  
+}
+.contact-us-card-left-info{
+  
+}
+.contact-us-body-card p{
+  text-align: left;
+  opacity: 100%;
+  
+}
+
+.contact-us-card-right-info{
+  opacity: 70%;
+  float: right;
+  margin-left: 1rem;
+}
+.contact-us-card-left-info a {
+  color: white;
+
+
+}
+
+#icon-contact-us-card-right-info-link{
+  color: rgb(229, 255, 0);
+}
+
+
