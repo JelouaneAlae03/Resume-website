@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     <script src="Scrpit/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="/CSS/main.css">
 </head>
-<body>
-    <div class="page p-0">  
+<body >
+    <div class="page p-0" >  
             <div class="left-bar">
                 <div class="card" id="card-personal-info">
                     <img class="card-img" src="/img/977056D0-369C-11ED-ACC0-12FCAE332B67.jpg" >
@@ -153,10 +154,10 @@
 
               <div class="number-info">
                 <ul type="none" class="info-list">
-                  <li><span class="number-info"><strong>2+</strong></span> Experience</li>
-                  <li><span class="number-info"><strong>4</strong></span>Completed Projects</li>
-                  <li><span class="number-info"><strong>10</strong></span>Happy Customers</li>
-                  <li><span class="number-info-last"><strong>1</strong></span>Honors and Awards</li>
+                  <li><span class="number-info"><strong>2+</strong></span> <p>Years Experience</p></li>
+                  <li><span class="number-info"><strong>4</strong></span><p>Completed Projects</p></li>
+                  <li><span class="number-info"><strong>10</strong></span><p>Happy Customers</p></li>
+                  <li><span class="number-info-last"><strong>1</strong></span><p>Honors and Awards</p></li>
                 </ul>
               </div>
             <!-- _________________________________________Services part______________________________________________  -->
@@ -201,7 +202,7 @@
                               <h5 class="card-tittle-info-rducation"><strong>OFPPT NTIC-1</strong></h5>
                               <p class="card-date">Oct 2020 - Jun 2022</p>
                             </div>
-                            <p class="sub-tittle-card">student</p>
+                            <p class="sub-tittle-card">Student</p>
                             <p class="card-descreption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero voluptates, beatae illum dicta illo dolores facere ipsa at sit et modi ullam</p>
                             <a class="Card-service-link" href="#">DIPLOME<i class="bi bi-arrow-right-short"></i></a>
                           </div>
@@ -214,20 +215,27 @@
                             <h5 class="card-tittle-info-rducation"><strong>OFPPT NTIC-1</strong></h5>
                             <p class="card-date">Oct 2020 - Jun 2022</p>
                           </div>
-                          <p class="sub-tittle-card">student</p>
+                          <p class="sub-tittle-card">Student</p>
                           <p class="card-descreption">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero voluptates, beatae illum dicta illo dolores facere ipsa at sit et modi ullam</p>
                           <a class="Card-service-link" href="#">DIPLOME<i class="bi bi-arrow-right-short"></i></a>
                         </div>
                         <div id="arrow-card" ></div>
                       </div>
                       </div>
-                    </div>
 
-                    <!-- <div class="circle-icon-container">
-                      <div class="cicle-icon-card">
-                        <i id="cicle-icon-card" class="bi bi-record-circle-fill"></i>
+                      <div class="roadmap-container-education">
+                        <div class="background-roadmap-card-education">
+                        </div>
+  
+                        <div class="cicle-icon-card">
+                          <i id="cicle-icon-roadmap-card-education" class="bi bi-record-circle-fill"></i>
+                          <i id="cicle-icon-roadmap-card-education2" class="bi bi-record-circle-fill"></i>
+
+                        </div>
+  
                       </div>
-                    </div> -->
+
+                  </div>
 
                 </div>
               <!-- _________________________________________Education part______________________________________________  -->
@@ -252,7 +260,15 @@
 
                           </div>
                       </div>
-                  </div>
+                    </div>
+                      <div class="roadmap-container-education" >
+                        <div class="background-roadmap-card-education" id="background-roadmap-card-work">
+                        </div>
+  
+                        <div class="cicle-icon-card">
+                          <i id="cicle-icon-roadmap-card-education" class="bi bi-record-circle-fill"></i>
+                        </div>
+                      </div>
                 </div>
               </div> 
               </div>
@@ -450,12 +466,6 @@
 
                     <div class="card">
                       <div class="card-body contact-us-body-card" >
-                        <p class="card-text contact-us-card-left-info">Fiverr:<span class="contact-us-card-right-info" ><a href="https://www.fiverr.com/jelouanealae?up_rollout=true">Click her <i class="bi bi-box-arrow-in-down-right"></i></a></span></p>
-                      </div>
-                    </div>
-
-                    <div class="card">
-                      <div class="card-body contact-us-body-card" >
                         <p class="card-text contact-us-card-left-info">Email: <span class="contact-us-card-right-info">jelouanealae.job@gmail.com</span></p>
                         <p class="card-text contact-us-card-left-info">Support service: <span class="contact-us-card-right-info">+212 632-716448</span></p>
                         <p class="card-text contact-us-card-left-info">Personal: <span class="contact-us-card-right-info" >+212 672-662517</span></p>
@@ -470,6 +480,38 @@
 
               <!--   ______________________________________________Get in touch part______________________________________________  -->
 
+              <div class="get-in-touch-container">
+                <div class="contact-us-container">
+                  <div class="tittle-services">
+                    <h4><strong>Get in touch</strong></h4>
+                  </div>
+
+                  <form action="" class="get-in-touch-form">
+                    <div class="container-form">
+                      <div class="group-from">
+                        <i class="bi bi-person-fill"></i> 
+                        <input type="text" class="" id="txtname" placeholder="Name">
+                      </div>
+                    
+    
+                      <div class="group-from">
+                        <img src="/img/@.png" alt="">
+                        <input type="text" class="" id="txtEmail" placeholder="Email">
+                      </div>
+    
+                      <div class="group-from">
+                        <i class="bi bi-chat-right-dots-fill"></i>
+                        <textarea   id="" cols="30" rows="10" placeholder="Message"></textarea>
+                      </div>  
+                      <button id="" type="submit" class="submit-get-in-touch"><strong>Send message</strong></button>
+                    </div>
+
+                    
+                  </form>
+
+              </div>
+
+              
 
 
 
@@ -510,7 +552,8 @@
 
 
 
-            <script>
+            <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
+            <script >
               var swiper = new Swiper(".mySwiper1", {
                 effect: "coverflow",
                 grabCursor: true,
@@ -527,9 +570,10 @@
                   el: ".swiper-pagination1",
                 },
               });
+  
+              
             </script>
     </div>
-    <!-- Initialize Swiper -->
 
 
 </body>
