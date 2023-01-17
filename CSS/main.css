@@ -413,14 +413,15 @@ li{
 
 .cards-services{
   display: flex;
+  justify-content:space-around;
 }
 
 
 #card-Services {
   background-color: #015366;
   padding: 2rem 2rem;
-  margin-right: 2.5rem;
-  width: fit-content;
+  width:fit-content;
+  margin-right:1rem;
 }
 
 
@@ -463,7 +464,7 @@ li{
 
 .info-education .card  p {
   opacity: 80%;
-  
+  width: fit-content;
 }
 
 
@@ -479,6 +480,19 @@ li{
   margin-top: 10px;
 }
 
+
+.info-education #arrow-card-work{
+  position: relative;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid transparent;
+  border-top: 15px solid transparent;
+  border-right: 20px solid #015366;
+  margin-right: 10px;
+  left:-28.6rem;
+  margin-top: 10px;
+}
+
 .education-img{
   display: flex;
 }
@@ -490,7 +504,6 @@ li{
 .container_roadmap-line {
   width: 6rem;
   height: 300px;
-  
   position: relative;
   margin-top: 10%;
 }
