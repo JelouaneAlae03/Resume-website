@@ -27,8 +27,15 @@ body{
   background-color: #00404F;
   width: 20rem;
   justify-content: center;
-  
+  position: fixed;
 }
+
+#card-personal-info{
+  position: absolute;
+  width: inherit;
+
+}
+
 
 #card-personal-info>.card-img{
     border-radius: 100%;
@@ -73,6 +80,8 @@ body{
 .personal-info{
     padding: 1.5rem;
     color: rgb(226, 231, 231);
+    position: relative;
+    padding-top: 15rem;
 }
 
 .personal-info>ul{
@@ -279,6 +288,8 @@ li{
   margin: 2rem 2rem;
   box-sizing:border-box; 
   background-size: cover;
+  position: relative;
+  left: 20rem;
 }
 
 .header{
@@ -403,12 +414,8 @@ li{
  }
 
 .tittle-services {
-  margin-top:2.5rem;
+  margin-top:2rem;
   margin-bottom:1rem;
-}
-
-.tittle-services:hover{
-
 }
 
 .cards-services{
@@ -419,19 +426,27 @@ li{
 
 #card-Services {
   background-color: #015366;
-  padding: 2rem 2rem;
+  /* padding: 2rem 2rem; */
   width:fit-content;
   margin-right:1rem;
 }
 
+#card-Services >.card-body-service{
+  margin: 1rem 1rem ;
+}
 
-#card-Services >img {
+.card-header-service>img{
+  /* padding: 1rem 1rem 0 1rem; */
+}
+
+
+/* #card-Services >img {
   background-color: #015366;
   padding: 0;
   border-radius: 1rem;
   image-resolution: cover;
   width: 100%;
-}
+} */
 
 
 
@@ -439,12 +454,14 @@ li{
 
 #card-tittle{
   color: white;
-  text-align: left;
+  letter-spacing: 0.05rem;
 }
 
 #card-descreption{
   opacity: 80%;
   padding-top:0.7rem ;
+  text-align: center;
+  max-width: 65ch;
 }
 
 .Card-service-link{
@@ -452,6 +469,7 @@ li{
   color: #F9F871;
   font-size: 1.1rem;
   padding: 0;
+  margin: 0 auto;
 }
 
 
@@ -723,7 +741,7 @@ li{
 }
 
 
-.info-education #arrow-card{
+/* .info-education #arrow-card{
   position: relative;
   width: 0;
   height: 0;
@@ -746,15 +764,15 @@ li{
   margin-right: 10px;
   left:-28.6rem;
   margin-top: 10px;
-}
+} */
 
-.education-img{
+/* .education-img{
   display: flex;
 }
 
 .Work-img{
   display: flex;
-}
+} */
 
 
 
@@ -1035,4 +1053,35 @@ li{
  .submit-get-in-touch:active {
   transform: scale(0.95);
  }
- 
+
+
+
+/* ______________________Loading page style______________________ */
+
+
+ .tracking-in-expand {
+	animation: tracking-in-expand 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
