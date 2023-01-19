@@ -27,13 +27,12 @@ body{
   background-color: #00404F;
   width: 20rem;
   justify-content: center;
-  position: fixed;
+  position: fixed ;
 }
 
 #card-personal-info{
   position: absolute;
-  width: inherit;
-
+  width:inherit ;
 }
 
 
@@ -78,32 +77,39 @@ body{
 
 
 .personal-info{
-    padding: 1.5rem;
-    color: rgb(226, 231, 231);
-    position: relative;
-    padding-top: 15rem;
+  padding: 14rem 1.5rem 8rem 1.5rem ;
+  color: rgb(226, 231, 231);
+  /* position: relative; */
+  /* padding-top: 14rem;  */
+  overflow-y:scroll;
+  height: 900px;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
 }
 
 .personal-info>ul{
-    padding: 0;
+  padding: 0;
 }
 
 .right-info{
-    float: right;
+  float: right;
 }
 
 .line{
-    width: 0.3rem;
-    background-color: white;
-    opacity:40%;
-    height: 0.01rem;
-    width: 17rem;
-    text-align: center;
-    margin: 1.5rem auto; 
+  width: 0.3rem;
+  background-color: white;
+  opacity:40%;
+  height: 0.01rem;
+  width: 17rem;
+  text-align: center;
+  margin: 1.5rem auto; 
 }
 
 li{
-    padding: 0.1rem;
+  padding: 0.1rem;
 }
 
 .content{
