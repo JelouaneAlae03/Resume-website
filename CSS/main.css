@@ -160,8 +160,6 @@ li{
 
 
 
-
-
 .flex-wrapper {
      display: flex;
      color: rgb(226, 231, 231);
@@ -186,12 +184,6 @@ li{
   animation: progress 2s ease-out forwards;
 }
 
-
-/* @keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-} */
 
 .circular-chart.orange .circle {
   stroke: #F9F871;
