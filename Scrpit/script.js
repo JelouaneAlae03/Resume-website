@@ -36,6 +36,16 @@ $(Document).ready(function(){
 
 
 
+    $(".get-in-touch-input").click(function(){
+        $(".get-in-touch-icon").css({"background-color" : "red"}).fadeOut(2000);
+    });
+    
+
+
+
+
+
+
 
 
 
