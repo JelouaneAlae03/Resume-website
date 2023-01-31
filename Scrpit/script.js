@@ -36,8 +36,39 @@ $(Document).ready(function(){
 
 
 
-    $(".get-in-touch-input").click(function(){
-        $(".get-in-touch-icon").css({"background-color" : "red"}).fadeOut(2000);
+    $(".get-in-touch-input1").focus(function(){
+        $("#get-in-touch-icon1").css({"background-color" : "#F9F871"});
+        $("#get-in-touch-icon1").css({"color" : "black"});
+
+    });
+    
+    $(".get-in-touch-input1").mouseleave(function(){
+        $("#get-in-touch-icon1").css({"background-color" : "#033540"});
+        $("#get-in-touch-icon1").css({"color" : "white"});
+    });
+
+    
+    $(".get-in-touch-input2").focus(function(){
+        $("#get-in-touch-icon2").css({"background-color" : "#F9F871"});
+        $("#get-in-touch-icon2").css({"color" : "black"});
+
+    });
+    
+    $(".get-in-touch-input2").mouseleave(function(){
+        $("#get-in-touch-icon2").css({"background-color" : "#033540"});
+        $("#get-in-touch-icon2").css({"color" : "white"});
+    });
+
+    
+    $(".get-in-touch-input3").focus(function(){
+        $("#get-in-touch-icon3").css({"background-color" : "#F9F871"});
+        $("#get-in-touch-icon3").css({"color" : "black"});
+
+    });
+    
+    $(".get-in-touch-input3").mouseleave(function(){
+        $("#get-in-touch-icon3").css({"background-color" : "#033540"});
+        $("#get-in-touch-icon3").css({"color" : "white"});
     });
     
 
