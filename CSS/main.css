@@ -835,9 +835,12 @@ li{
   /* max-width: fit-content; */
 }
 
+.imgs-card{
+height: fit-content;
+}
 .cards-project .card .card-img{
   border-radius: 2rem;
-  width: 100%;
+  width: 100%; 
   padding: 1rem;
 }
 
@@ -849,6 +852,7 @@ li{
 .cards-project .card p{
   padding: 0rem 1rem 1rem 1rem;
   opacity: 80%;
+  
 }
 
 .technology-project-card{
@@ -863,6 +867,7 @@ li{
 
 .recommendation-container .tittle-services h4{
   margin-bottom: 2rem;
+  /* margin-top: 20rem; */
 }
 
 .Recommendations-cards{
@@ -870,6 +875,7 @@ li{
   position: relative;
   box-sizing: border-box;
   width: fit-content;
+  
 }
 
 #card-Recommendations-container{
