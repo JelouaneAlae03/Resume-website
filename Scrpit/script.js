@@ -17,7 +17,11 @@ $(Document).ready(function(){
     //     $("#line-first","#line-second").hide()
     // }); 
 
-
+    $(".navbar-button").click(function(){
+        $(".navbar-container").toggle();
+        $("..navbar-button").css("background-color","red");
+        
+    });
 
     var lastScrollTop =0;
     $(".personal-info").scroll(function(event){
@@ -80,6 +84,6 @@ $(Document).ready(function(){
 
 
 
+
+
 });
-
-

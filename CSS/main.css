@@ -11,12 +11,14 @@
 
 body{
   background-color: #033540;
-  margin: 0 0 0 0 ;
+  margin: 2rem 2re 0 0 ;
   color: white;
   font-size: 14px;
   padding: 1rem;
   /* max-width: 100%; */
-  width:74% ;
+  width:100% ;
+  display: flex;
+  box-sizing: border-box;
 }
 .title{
   font-family: 'Montserrat', sans-serif;
@@ -281,14 +283,17 @@ li{
 }
 .page{
   display: flex;
+  /* width: 100%; */
 }
 .main-content-page{
-  width: 100%;
+  width: 75%;
   margin: 2rem 2rem;
   box-sizing:border-box; 
   background-size: cover;
-  position: relative;
+  /* position: relative; */
   left: 19rem;
+  position: absolute;
+  display: flex;
 }
 
 .header{
@@ -852,7 +857,6 @@ height: fit-content;
 .cards-project .card p{
   padding: 0rem 1rem 1rem 1rem;
   opacity: 80%;
-  
 }
 
 .technology-project-card{
@@ -1116,6 +1120,125 @@ height: fit-content;
     opacity: 1;
   }
 }
+
+.right-part{
+  height: inherit;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  background-color: #00404F;
+  width: max-content;
+}
+.navbar-header{
+  background-color: #015366;
+  width: 100%;
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.navbar-button{
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.683);
+  font-size: 2rem;
+  text-align: center;
+  border: none;
+  outline: none; 
+  border: transparent 0px solid;
+  width:100%;
+  padding: 0;
+  padding: 1rem;
+  
+}
+
+.navbar-button:hover{
+  color: white;
+  transition: 0.3s ease-in;
+}
+
+.navbar-button:focus{
+  border: none;
+  outline: none; 
+  border: transparent 0px solid;
+}
+
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100px);
+            transform: translateX(-100px);
+  }
+}
+
+.navbar-container{
+    display: none;
+    -webkit-animation: slide-in-right 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slide-in-right 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  
+
+
+  
+
+
+
+.list-menu{
+  list-style: none;
+  padding: 4rem 2rem;
+}
+
+.navbar-link{
+  margin-bottom: 1rem;
+}
+
+.navbar-link>a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.489);
+}
+
+
+.navbar-link>a:hover{
+  text-decoration: none;
+  color:white;
+  transition: .2s ease-in-out;
+}
+
 
 
 
