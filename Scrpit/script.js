@@ -17,11 +17,18 @@ $(Document).ready(function(){
     //     $("#line-first","#line-second").hide()
     // }); 
 
-    $(".navbar-button").click(function(){
+    $(".right-part").hover(function(){
         $(".navbar-container").toggle();
-        $("..navbar-button").css("background-color","red");
-        
+        $(".right-part").css("width","15rem");
+        $("#navbar-button-icon").removeClass("bi bi-list").addClass("bi bi-x-lg");
     });
+
+
+    $(".right-part").mouseleave(function(){
+        $(".right-part").css("width","");
+        $("#navbar-button-icon").removeClass("bi bi-x-lg").addClass("bi bi-list");
+    });
+
 
     var lastScrollTop =0;
     $(".personal-info").scroll(function(event){
