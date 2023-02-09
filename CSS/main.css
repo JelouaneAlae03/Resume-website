@@ -287,11 +287,13 @@ li{
   /* width: 100%; */
 }
 .main-content-page{
-  width: 100%;
-  margin: 1rem 2rem;
+
+  width: 80%; 
+  margin: 0.5rem 2rem;
   box-sizing:border-box;
   background-size: cover;
-  padding-left: 18rem;
+  padding-left: 18rem; 
+  transition:0.3s left ;
 }
 
 .header{
@@ -303,19 +305,28 @@ li{
 
 
 .header-cover{
-
+  width: 100%;
   height: 100%;
-  position: relative;
+  position: relative; 
   box-shadow:  -2px -2px 10px #008F7D,
   2px 2px 10px #015366;
+  border-radius: 1rem;
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
+  /* opacity: 0%; */
+  filter: blur(1px);
 }
 
-.me-img-header{
+/* .profile-header-cover{
   position: absolute;
-  top: -1.5rem;
-  right: 0rem;
-  height: fit-content;
-}
+  width: 200px;
+  height: 200px;
+  right: 1rem;
+  border-radius: 90px;
+  top: 3rem;
+} */
+
+
 
 .text-header{
   padding: 1rem 5rem;
@@ -324,7 +335,7 @@ li{
 }
 .text-header h2{
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   margin-top: 2rem;
 }
 #btn-Discover{
@@ -865,11 +876,13 @@ height: fit-content;
 
 .recommendation-container{
   max-width: 100%;
+  
 }
 
 .recommendation-container .tittle-services h4{
   margin-bottom: 2rem;
   /* margin-top: 20rem; */
+  position: relative;
 }
 
 .Recommendations-cards{
@@ -1114,8 +1127,8 @@ height: fit-content;
   right: 1rem;
   height: 100%;
   background-color: #00404F;
-  transition: width 0.2s linear;
-  width: 5rem;
+  transition: width 0.3s linear;
+  width: 6.5rem;
 }
 
 
@@ -1148,6 +1161,41 @@ height: fit-content;
   }
 }
 
+
+@-webkit-keyframes slide-in-right1 {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+
+  }
+}
+@keyframes slide-in-right1 {
+  0% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.menu-tittle{
+  writing-mode: vertical-lr;
+  transition: 0.2 linear;
+  opacity: 70%;
+  margin: 2rem auto 0 auto;
+  letter-spacing: 0.2rem;
+  /* -webkit-animation: rotate-90-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: rotate-90-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
+}
+
+
+
 .navbar-button{
   background-color: transparent;
   color: rgba(255, 255, 255, 0.683);
@@ -1173,23 +1221,26 @@ height: fit-content;
 
 
 .navbar-container{
-     display: none; 
-     position: absolute;
-    -webkit-animation: slide-in-right 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-in-right 0.2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
+  
+}  
 
 .list-menu{
-  list-style: none;
-  padding: 4rem 0 0 1.5rem;
+  padding: 1rem 2.4rem;
   height: fit-content;
 }
 
 .navbar-link{
+  writing-mode: vertical-lr;
   position: relative;
   margin-bottom: 1rem;
+  list-style: none;
+
 }
 
+.navbar-link:hover{
+  -webkit-animation: rotate-90-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: rotate-90-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
 
 .navbar-link>a{
   text-decoration: none;
@@ -1201,27 +1252,41 @@ height: fit-content;
 }
 
 
+.navbar-link:hover{
+
+}
+
+
 .navbar-link>a:hover{
   text-decoration: none;
   color:white;
-}
 
-.line-navbar {
-  background-color: white;
-  opacity:40%;
-  height: 0.01rem;
-  width:15rem;
-  text-align: center;
-  margin: 0 auto;
-  margin: 2rem 0;
-}
+  -webkit-animation: rotate-90-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: rotate-90-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+} 
 
-.list-menu-light-mode{
-  list-style: none;
-  padding: 0rem 0 0 1.5rem;
-  height: fit-content;
-}
 
+
+@-webkit-keyframes rotate-90-ccw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
+@keyframes rotate-90-ccw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
+}
 
 
 
