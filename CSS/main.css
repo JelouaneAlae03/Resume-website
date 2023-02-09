@@ -288,7 +288,7 @@ li{
 }
 .main-content-page{
 
-  width: 80%; 
+  width: fit-content; 
   margin: 0.5rem 2rem;
   box-sizing:border-box;
   background-size: cover;
@@ -515,7 +515,10 @@ li{
   flex-direction: column;
   margin: 20px auto;
   position: relative;
+  width: fit-content;
 }
+
+
 .timeline__event {
   margin-bottom: 20px;
   position: relative;
@@ -750,13 +753,9 @@ li{
 
 
 
-
-
-.history{
-  display: flex;
-}
 .Education{
   /* display: flex; */
+  width: 100%;
 }
 .info-education{
   display: flex;
