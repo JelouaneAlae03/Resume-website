@@ -131,3 +131,24 @@ $(Document).ready(function(){
         $("#get-in-touch-icon3").css({"color" : "white"});
     });
 });
+
+
+
+var isavailble =true;
+
+if(isavailble==true){
+    $(Document).ready(function(){
+        $('.page').hide();
+        $('body').css({'background-image':'url(/img/website_image.png)'});
+        $('body').css({'background-repeat':'no-repeat'});
+        $('body').css({'background-size':'cover'});
+        $('body').css({'text-size-adjust':'none'});
+        $('#OutOfServicesMessage').removeClass("").addClass("Website-work-div");
+        $('#OutOfServicesMessage>h2').removeClass("").addClass("Website-work-text");
+    });
+}
+else{
+    $(Document).ready(function(){
+        $('#OutOfServicesMessage').hide();
+    }); 
+}
