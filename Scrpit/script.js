@@ -141,7 +141,7 @@ if(isavailble==true){
         $('.page').hide();
         $('body').css({'background-image':'url(/img/website_image.png)'});
         $('body').css({'background-repeat':'no-repeat'});
-        $('body').css({'background-size':'cover'});
+        // $('body').css({'background-size':'cover'});
         $('body').css({'text-size-adjust':'none'});
         $('#OutOfServicesMessage').removeClass("").addClass("Website-work-div");
         $('#OutOfServicesMessage>h2').removeClass("").addClass("Website-work-text");
