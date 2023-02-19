@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-
+html{
+  scroll-behavior:smooth;
+}
 *{
   padding: 0rem;
   margin: 0rem;
@@ -10,7 +12,14 @@
   text-decoration: none;
   outline: none;
 }
-
+body{
+  background-color: #033540;
+  margin: 2rem 2re 0 0 ;
+  color: white;
+  font-size: 14px;
+  padding: 1rem;
+  /* display: flex; */
+}
 .Website-work-div{
 
   width: 100%;
@@ -31,7 +40,7 @@
 }
 
 
-@media (max-width : 768px){
+@media (max-width : 1032px){
   .Website-work-text{
     text-align: center;
     font-weight: bold;
@@ -54,13 +63,7 @@
 .Website-Not-Work{
 
 }
-body{
-  background-color: #033540;
-  margin: 2rem 2re 0 0 ;
-  color: white;
-  font-size: 14px;
-  padding: 1rem;
-}
+
 .title{
   font-family: 'Montserrat', sans-serif;
   letter-spacing: 0.03rem;
@@ -71,6 +74,7 @@ body{
   width: 19rem;
   justify-content: center;
   position: fixed ;
+  
 }
 
 #card-personal-info{
@@ -352,7 +356,7 @@ li{
 .header{
   background-size: 100%;
   max-width: 100%;
-
+  display: flex;
 }
 
 
@@ -370,6 +374,25 @@ li{
   filter: blur(1px);
 }
 
+
+.menu-mobile-mode-button{
+  color: white;
+  border: 0px ;
+  width: 10%;
+  background-color: transparent;
+  font-size: 1.5rem;
+  position: relative;
+  right:0rem;
+  display: none;
+}
+
+
+.menu-mobile-mode-button:focus{
+  border: none;
+ outline: none;
+ border: transparent 0px solid;
+}
+
 /* .profile-header-cover{
   position: absolute;
   width: 200px;
@@ -382,14 +405,15 @@ li{
 
 
 .text-header{
-  padding: 1rem 5rem;
+  padding: 2rem 5rem;
   position: absolute;
   top: 0;
 }
 .text-header h2{
   font-family: 'Montserrat', sans-serif;
-  font-size: 3.2rem;
+  font-size: 2.7rem;
   margin-top: 2rem;
+
 }
 #btn-Discover{
   font-size: 1.3rem;
@@ -459,6 +483,17 @@ li{
   transition: background 0s;
 }
 
+
+.qr-code{
+  position: absolute; 
+  width: 11rem;
+  height: auto;
+  top: 5rem;
+  right: -11rem; 
+  border: 0.5rem solid white;
+  border-radius: 1rem;
+}
+
 .number-info{
   max-width: 100%;
   margin-top: 0.5rem;
@@ -495,8 +530,8 @@ li{
  }
 
 .tittle-services {
-  margin-top:1.5rem;
-  margin-bottom:1rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .cards-services{
@@ -510,28 +545,12 @@ li{
   /* padding: 2rem 2rem; */
   width:fit-content;
   margin-right:1rem;
+  border-radius: 0;
 }
 
 #card-Services >.card-body-service{
   margin: 1rem 1rem ;
 }
-
-.card-header-service>img{
-  /* padding: 1rem 1rem 0 1rem; */
-}
-
-
-/* #card-Services >img {
-  background-color: #015366;
-  padding: 0;
-  border-radius: 1rem;
-  image-resolution: cover;
-  width: 100%;
-} */
-
-
-
-
 
 #card-tittle{
   color: white;
@@ -547,9 +566,11 @@ li{
 .Card-service-link{
   text-decoration: none;
   color: #F9F871;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 0;
   margin: 0 auto;
+  font-weight: bold;
+  letter-spacing: 0.09rem;
 }
 
 
@@ -557,8 +578,8 @@ li{
   text-decoration: none;
   color: #F9F871;
   margin: 0.5rem ease;
-  transition: 0.2s ;
-  text-shadow:  1px 0 5px #F9F871;
+  transition: 0.1s ;
+  font-size: 1.05rem;
 
 }
 
@@ -737,7 +758,7 @@ li{
   content: none;
 }
 
-@media (max-width: 786px) {
+@media (max-width: 1032px) {
   .timeline__event {
     flex-direction: column;
     align-self: center;
@@ -905,9 +926,9 @@ position: relative;
 height: fit-content;
 }
 .cards-project .card .card-img{
-  border-radius: 2rem;
+  border-radius: 15px;
   width: 100%;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .cards-project .card h2{
@@ -932,8 +953,7 @@ height: fit-content;
 }
 
 .recommendation-container .tittle-services h4{
-  margin-bottom: 2rem;
-  /* margin-top: 20rem; */
+  /*margin-top: 20rem; */
   position: relative;
 }
 
@@ -1346,7 +1366,7 @@ height: fit-content;
 }
 
 
-@media  (max-width:768px){
+@media  (max-width:1032px){
 
     *{
       box-sizing: border-box;
@@ -1355,17 +1375,22 @@ height: fit-content;
       padding: 0;
       margin: 0;
     }
+
     .page{
-      flex-direction: column;
+      margin: 0 auto;
+      
 
     }
     .left-bar{
-      visibility: hidden;
+      position: absolute;
+      z-index:10;
     }
+
     .main-content-page{
       padding: 0;
       margin: 0;
       width: 100%;
+      position: relative;
     }
 
     .container{
@@ -1373,19 +1398,13 @@ height: fit-content;
       padding: 0;
     }
     .header{
-      margin: 0;
-    }
-    .header-cover{
-      /* visibility: hidden;     */
-      width: 10rem;
-      height: 1rem;
-
+      margin: 0 auto;
 
     }
 
+
     .header-cover{
-      width: auto;
-      height: 30rem;
+      width: 100%;
       border-radius: 0;
       filter: blur(1px);
       aspect-ratio: 1;
@@ -1398,6 +1417,12 @@ height: fit-content;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
+      padding: 1rem 0;
+    }
+
+    .menu-mobile-mode-button{
+      display:block;
+      z-index: 1001;
     }
 
     .text-header>h2{
@@ -1406,8 +1431,14 @@ height: fit-content;
     }
 
     #btn-Discover{
-     
-     
+
+      margin: 10rem  auto 0 auto;
+    }
+
+    .qr-code{
+      margin: 12rem  23rem 0 0   ;
+
+      width: 8rem; 
     }
 
     .info-list{
@@ -1421,6 +1452,8 @@ height: fit-content;
 
     .tittle-services{
       text-align: center;
+      margin: 2rem 0 0 0;
+
     }
 
     .cards-services{
@@ -1432,6 +1465,20 @@ height: fit-content;
     }
     .cards-project{
       flex-direction: column;
+      
+    }
+
+    .cards-project>#project-card{
+      margin: 0rem 1rem 1rem 1rem;
+
+    }
+
+    #card-Services{
+      margin:0.5rem 1rem 0rem 1rem  ;
+    }
+
+    .Recommendations-cards{
+      margin: 0rem  0 1rem 0;
     }
 
     .contact-us-cards{
@@ -1440,16 +1487,20 @@ height: fit-content;
     }
 
     .contact-us-cards>.card{
-      width: 100%;
-      margin-bottom: 0.5rem;
+      width: 90%;
+      margin:0.5rem auto;
+    }
+    
+    .get-in-touch-form{
+      width: 90%;
+      margin: 0 auto;
     }
     .right-part{
       visibility: hidden;
     }
+
+    
 }
-
-
-
 
 
 

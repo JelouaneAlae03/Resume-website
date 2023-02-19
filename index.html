@@ -13,6 +13,7 @@
     <script src="Scrpit/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="/CSS/main.css">
 </head>
 <body >
@@ -20,172 +21,172 @@
     <h2 class="OOS-text">The Website is currently out of service<br>
       Please return later!</h2>
   </div>
-  <div class="page p-0" >  
-            <div class="left-bar" >
-                <div class="card" id="card-personal-info">
-                    <img class="card-img" src="/img/977056D0-369C-11ED-ACC0-12FCAE332B67.jpg" >
-                    <div class="card-body">
-                        <a href="#" class="nav-link active"><h5 class="card-tittle"><strong> JELOUANE Alae</strong></h5></a>
-                        <P class="card-text">Full stack developper </P>
-                    </div>
-                </div>
+  <div class="page p-0" id="page">  
+        <div class="left-bar"  data-aos="fade-right" data-aos-duration="800" id="navbarColor01">
+          <div class="card" id="card-personal-info">
+              <img class="card-img" src="/img/977056D0-369C-11ED-ACC0-12FCAE332B67.jpg" >
+              <div class="card-body">
+                  <a href="#" class="nav-link active"><h5 class="card-tittle"><strong> JELOUANE Alae</strong></h5></a>
+                  <P class="card-text">Full stack developper </P>
+              </div>
+          </div>
 
-                <div class="personal-info">
-                    <ul type="none">
-                        <li>Country:<span class="right-info">Morocco</span></li>
-                        <li>City:<span class="right-info">Casablanca</span></li>
-                        <li>Age:<span class="right-info">21 </span></li>
-                    </ul>
+          <div class="personal-info">
+              <ul type="none">
+                  <li>Country:<span class="right-info">Morocco</span></li>
+                  <li>City:<span class="right-info">Casablanca</span></li>
+                  <li>Age:<span class="right-info">21 </span></li>
+              </ul>
 
-                    <div class="line" id="line-first"></div>
-                    <div class="content">
-                        <h6 class="title"><strong>Languages</strong></h6>
-                    </div>
-                  
-                  <div class="flex-wrapper p-2">
-                    <div class="single-chart">
-                      <svg viewBox="0 0 36 36" class="circular-chart orange">
-                        <path class="circle" stroke-dasharray="100, 100" d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        <text x="18" y="20.35" class="percentage">100%</text>
-                        <p class="circle-tittle">Arabic</p>
-                      </svg>
-                    </div>
-
-                    <div class="single-chart">
-                      <svg viewBox="0 0 36 36" class="circular-chart orange">
-                        <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        <text x="18" y="20.35" class="percentage">60%</text>
-                        <p class="circle-tittle">Frensh</p>
-                      </svg>
-                    </div>
-
-                    <div class="single-chart">
-                      <svg viewBox="0 0 36 36" class="circular-chart orange">
-                        <path class="circle" stroke-dasharray="75, 100" d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        <text x="18" y="20.35" class="percentage">75%</text>
-                        <p class="circle-tittle">English</p>
-                      </svg>
-                    </div>
-                  </div>
-
-                  <div class="line" id="line-second"></div>
-                  
-                  <div class="coding-part">
-                      <div class="content">
-                        <h6 class="title"><strong>Coding</strong></h6>
-
-                        <div class="element">
-                          <p>Html <strong>/</strong> Css (Bootstrap) <span class="right-info">70%</span></p>
-                          <div class="range " style="width: 11.9rem;"></div>
-                        </div>
-                        
-                        
-                        <div class="element">
-                          <p>Js <strong>/</strong> Jq<span class="right-info">60%</span></p>
-                          <div class="range" style="width: 10.2rem;"></div>
-                        </div>
-
-                        <div class="element">
-                          <p>C#  <span class="right-info">85%</span></p>
-                          <div class="range" style="width: 14rem;"></div>
-                        </div>
-                        
-                        <div class="element">
-                          <p>SQL Server<span class="right-info">80%</span></p>
-                          <div class="range" style="width: 13.6rem;"></div>
-                        </div>
-
-                        <div class="element">
-                          <p class="">ASP.NET MVC<span class="right-info">55%</span></p>
-                          <div class="range" style="width: 9.35rem;"></div>
-                        </div>
-                      </div>
-                  </div>
-
-                  <div class="line"></div>
-                  
-
-
-                  <div class="Knowledge-part">
-                    <div class="content">
-                      <h6 class="title"><strong>Knowledge</strong></h6>
-                    </div>
-                  
-                    <ul type="none">
-                      <li><i class="bi bi-check-lg " id="checkIcon"> </i>Jquery , Entity Framework , JSON</li>
-                      <li><i class="bi bi-check-lg "id="checkIcon"> </i>Uml , Merise</li>
-                      <li><i class="bi bi-check-lg " id="checkIcon"> </i>GitHub , Trello</li>
-                    </ul>
-
-                    
-                  </div>
-
-                    <div class="line"></div>
-
-                    <div class="Cv-part">
-                      <h6 class="cv-link"><a href="#" target="_blank"> DOWNLOAD CV <i class="bi bi-arrow-down-circle-fill"></i></a></h6>
-                    </div>
-                </div>
-
-
-
-                <div class="footer">
-                  <a href="https://www.linkedin.com/in/jelouanealae/" target="_blank" class="navbar-brand"><i class="bi bi-linkedin"></i></a>
-                  <a href="https://www.instagram.com/3al1.original/" target="_blank" class="navbar-brand"><i class="bi bi-instagram"></i></a>
-                  <a href="https://github.com/JelouaneAlae" target="_blank" class="navbar-brand"><i class="bi bi-github"></i></a>
-                  <a href="mailto:jelouanealae.job@gmail.com" target="_blank" class="navbar-brand"><i class="bi bi-envelope"></i></a>
-                </div>
-          </div>  
+              <div class="line" id="line-first"></div>
+              <div class="content">
+                  <h6 class="title"><strong>Languages</strong></h6>
+              </div>
             
-          <div class="main-content-page" >
-            <div class="container">
-
-            
-              <div class="header">
-                <img src="/img/cover.png" alt="" class="header-cover">
-                <div class="text-header">
-                  <h2 class="tracking-in-expand"><strong> Discover my Amazing <br>Art Space! </strong></h2>
-                  <button class="" id="btn-Discover" >Discover Now</button>
-                </div>
+            <div class="flex-wrapper p-2">
+              <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart orange">
+                  <path class="circle" stroke-dasharray="100, 100" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                  <text x="18" y="20.35" class="percentage">100%</text>
+                  <p class="circle-tittle">Arabic</p>
+                </svg>
               </div>
 
-              <div class="number-info">
+              <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart orange">
+                  <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                  <text x="18" y="20.35" class="percentage">60%</text>
+                  <p class="circle-tittle">Frensh</p>
+                </svg>
+              </div>
+
+              <div class="single-chart">
+                <svg viewBox="0 0 36 36" class="circular-chart orange">
+                  <path class="circle" stroke-dasharray="75, 100" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                  <text x="18" y="20.35" class="percentage">75%</text>
+                  <p class="circle-tittle">English</p>
+                </svg>
+              </div>
+            </div>
+
+            <div class="line" id="line-second"></div>
+            
+            <div class="coding-part">
+                <div class="content">
+                  <h6 class="title"><strong>Coding</strong></h6>
+
+                  <div class="element">
+                    <p>Html <strong>/</strong> Css (Bootstrap) <span class="right-info">70%</span></p>
+                    <div class="range " style="width: 11.9rem;"></div>
+                  </div>
+                  
+                  
+                  <div class="element">
+                    <p>Js <strong>/</strong> Jq<span class="right-info">60%</span></p>
+                    <div class="range" style="width: 10.2rem;"></div>
+                  </div>
+
+                  <div class="element">
+                    <p>C#  <span class="right-info">85%</span></p>
+                    <div class="range" style="width: 14rem;"></div>
+                  </div>
+                  
+                  <div class="element">
+                    <p>SQL Server<span class="right-info">80%</span></p>
+                    <div class="range" style="width: 13.6rem;"></div>
+                  </div>
+
+                  <div class="element">
+                    <p class="">ASP.NET MVC<span class="right-info">55%</span></p>
+                    <div class="range" style="width: 9.35rem;"></div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+            
+
+
+            <div class="Knowledge-part">
+              <div class="content">
+                <h6 class="title"><strong>Knowledge</strong></h6>
+              </div>
+            
+              <ul type="none">
+                <li><i class="bi bi-check-lg " id="checkIcon"> </i>Jquery , Entity Framework , JSON</li>
+                <li><i class="bi bi-check-lg "id="checkIcon"> </i>Uml , Merise</li>
+                <li><i class="bi bi-check-lg " id="checkIcon"> </i>GitHub , Trello</li>
+              </ul>
+
+              
+            </div>
+
+              <div class="line"></div>
+
+              <div class="Cv-part">
+                <h6 class="cv-link"><a href="#" target="_blank"> DOWNLOAD CV <i class="bi bi-arrow-down-circle-fill"></i></a></h6>
+              </div>
+          </div>
+
+
+
+          <div class="footer">
+            <a href="https://www.linkedin.com/in/jelouanealae/" target="_blank" class="navbar-brand"><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.instagram.com/3al1.original/" target="_blank" class="navbar-brand"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/JelouaneAlae" target="_blank" class="navbar-brand"><i class="bi bi-github"></i></a>
+            <a href="mailto:jelouanealae.job@gmail.com" target="_blank" class="navbar-brand"><i class="bi bi-envelope"></i></a>
+          </div>
+      </div>
+           <!-- _________________________________________Container  part______________________________________________  -->
+
+          <div class="main-content-page" id="main-content-page" >
+            <div class="container">
+            
+              <div class="header" id="tran" data-aos="fade-down" data-aos-duration="1000" >
+                <img src="/img/cover.png" alt="" class="header-cover">
+                
+                <div class="text-header">
+                  <img src="/img/qr.png" alt="" class="qr-code">
+                  <button class="menu-mobile-mode-button"><i class="bi bi-three-dots-vertical"></i></button>
+                  <h2 class="tracking-in-expand"><strong> Discover my Amazing <br>Work Space! </strong></h2>
+                  <button class="" id="btn-Discover" >Discover Now</button>
+                  
+                </div>
+                
+              </div>
+
+              <div class="number-info" >
                 <ul type="none" class="info-list">
-                  <li><span class="number-info"><strong>2+</strong></span> <p>Years Experience</p></li>
-                  <li><span class="number-info"><strong>4</strong></span><p>Completed Projects</p></li>
-                  <li><span class="number-info"><strong>10</strong></span><p>Happy Customers</p></li>
-                  <li><span class="number-info-last"><strong>1</strong></span><p>Honors and Awards</p></li>
+                  <li data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300"><span class="number-info" ><strong>2+</strong></span> <p>Years Experience</p></li>
+                  <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="700"><span class="number-info"><strong>4</strong></span><p>Completed Projects</p></li>
+                  <li data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000"><span class="number-info"><strong>10</strong></span><p>Happy Customers</p></li>
+                  <li data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1300"><span class="number-info-last"><strong>1</strong></span><p>Honors and Awards</p></li>
                 </ul>
               </div>
             <!-- _________________________________________Services part______________________________________________  -->
 
-              <div class="Services" id="Services-part">
-                <div class="tittle-services">
+              <div class="Services" id="Services-part" >
+                <div class="tittle-services" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1700">
                   <h4><strong>Services</strong></h4>
                 </div>
 
                 <div class="cards-services">
-                  <div class="card" id="card-Services">
-                    <div class="card-header-service" >
-                      <img src="/img/web development image.jpg" alt="" class="card-img">
-                    </div>
-                    <div class="card-body-service">
+                  <div class="card" id="card-Services" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1700">
+
+                    <div class="card-body-service" >
                       <h2 class="card-tittle" id="card-tittle"><strong>WEB DEVELOPEMENT</strong></h2>
                       <p id="card-descreption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quibusdam eligendi rem incidunt vitae quas nam porro quasi iure </p>
                       <a href="#" class="Card-service-link">Order Now<span class="Card-service-link-icon"><i class="bi bi-arrow-right-short"></i></span></a>
                     </div>
                   </div>
 
-                  <div class="card" id="card-Services">
-                    <div class="card-header-service">
-                      <img src="/img/web development image.jpg" alt="" class="card-img">
-                    </div>
+                  <div class="card" id="card-Services" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2100">
                     <div class="card-body-service">
                       <h2 class="card-tittle" id="card-tittle"><strong>WEB DEVELOPEMENT</strong></h2>
                       <p id="card-descreption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quibusdam eligendi rem incidunt vitae quas nam porro quasi iure </p>
@@ -194,10 +195,10 @@
                   </div>
                   
 
-                  <div class="card" id="card-Services">
-                    <div class="card-header-service">
+                  <div class="card" id="card-Services" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="2500">
+                    <!-- <div class="card-header-service">
                       <img src="/img/web development image.jpg" alt="" class="card-img">
-                    </div>
+                    </div> -->
                     <div class="card-body-service">
                       <h2 class="card-tittle" id="card-tittle"><strong>WEB DEVELOPEMENT</strong></h2>
                       <p id="card-descreption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, quibusdam eligendi rem incidunt vitae quas nam porro quasi iure </p>
@@ -215,12 +216,12 @@
               <!-- _________________________________________Roadmap part______________________________________________  -->
 
 
-            <div class="Education" id="Education-part">
-                <div class="tittle-services">
+            <div class="Education" id="Education-part" >
+                <div class="tittle-services" data-aos="fade" data-aos-duration="1500" >
                   <h4><strong>Education and work history</strong></h4>
                 </div>
               <div class="timeline">
-                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1">
+                <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="100">
                   <div class="timeline__event__icon ">
                     <i class="bi bi-book"></i>
               
@@ -237,7 +238,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2">
+                <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
                   <div class="timeline__event__icon">
                     <i class="bi bi-book"></i>
               
@@ -254,7 +255,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3">
+                <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
                   <div class="timeline__event__icon">
                     <i class="bi bi-person-workspace"></i>
               
@@ -279,13 +280,13 @@
 
 
               <div class="complete-project-part" id="Project-part">
-                <div class="tittle-services">
+                <div class="tittle-services" data-aos="fade" data-aos-duration="1000">
                   <h4><strong>Completed Project</strong></h4>
                 </div>
 
                 <div class="cards-contianer">
                   <div class="cards-project">
-                    <div class="swiper mySwiper card">
+                    <div class="swiper mySwiper card" id="project-card" data-aos="fade-left" data-aos-duration="1000" >
                       <div class="swiper-wrapper imgs-card">
                         <img class="swiper-slide card-img" src="/img/jt image.png" alt="">
                         <img class="swiper-slide card-img" src="/img/jt image.png" alt="">
@@ -298,7 +299,7 @@
                     </div>
 
                     
-                    <div class="swiper mySwiper card">
+                    <div class="swiper mySwiper card" id="project-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
                       <div class="swiper-wrapper imgs-card">
                         <img class="swiper-slide card-img" src="/img/jt image.png" alt="">
                         <img class="swiper-slide card-img" src="/img/jt image.png" alt="">
@@ -310,7 +311,7 @@
                       <p class="card-body">The jelouanetravaux application is a Windows application created in collaboration with the jelouane travaux company, to create and maintain painting projects. The application is programmed in C# and SQL Server programming language for the database.</p>
                     </div>
 
-                    <div class="swiper mySwiper card">
+                    <div class="swiper mySwiper card" id="project-card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
                       <div class="swiper-wrapper imgs-card">
                         <img class="swiper-slide card-img" src="/img/jt image.png" alt="">
                         <img class="swiper-slide card-img" src="/img/jt image.png" alt="">
@@ -344,13 +345,13 @@
               <!--   ______________________________________________Recommendations part______________________________________________  -->
 
 
-              <div class="swiper mySwiper1 recommendation-container" id="Recommendations-part">
+              <div class="swiper mySwiper1 recommendation-container" id="Recommendations-part" data-aos="flip-up" data-aos-duration="1000">
                 <div class="tittle-services">
                   <h4><strong>Recommendations</strong></h4>
                 </div>
 
-                <div class="swiper-wrapper Recommendations-cards">
-                  <div class="swiper-slide" id="card-Recommendations-container">
+                <div class="swiper-wrapper Recommendations-cards"  >
+                  <div class="swiper-slide" id="card-Recommendations-container" >
                       <img src="/img/profile2.jpg" alt="">
                       <div class="name-profession">
                         <h2 class="card-profession-tittle"><strong>Profile name</strong></h2>
@@ -452,24 +453,24 @@
 
               <div class="contact-us-part" id="Contact-part">
                 <div class="contact-us-container">
-                  <div class="tittle-services">
+                  <div class="tittle-services" data-aos="fade" data-aos-duration="800">
                     <h4><strong>Contact information</strong></h4>
                   </div>
 
                   <div class="contact-us-cards">
-                    <div class="card">
+                    <div class="card" data-aos="fade" data-aos-duration="1000" data-aos-delay="200">
                       <div class="card-body contact-us-body-card" >
                         <p class="card-text contact-us-card-left-info">Country: <span class="contact-us-card-right-info">Morocco</span></p>
                         <p class="card-text contact-us-card-left-info">City: <span class="contact-us-card-right-info" >Casablanca</span></p>
-                        <p class="card-text contact-us-card-left-info">Street: <span class="contact-us-card-right-info" >Lissasfa residence khouzama</span></p>
+                        <p class="card-text contact-us-card-left-info">Street: <span class="contact-us-card-right-info" >Oulfa Lissasfa Residence khouzama </span></p>
                       </div>
                     </div>
 
-                    <div class="card">
+                    <div class="card" data-aos="fade" data-aos-duration="800" data-aos-delay="500">
                       <div class="card-body contact-us-body-card" >
                         <p class="card-text contact-us-card-left-info">Email: <span class="contact-us-card-right-info">jelouanealae.job@gmail.com</span></p>
-                        <p class="card-text contact-us-card-left-info">Support service: <span class="contact-us-card-right-info">+212 632-716448</span></p>
-                        <p class="card-text contact-us-card-left-info">Personal: <span class="contact-us-card-right-info" >+212 672-662517</span></p>
+                        <p class="card-text contact-us-card-left-info">Support service: <span class="contact-us-card-right-info">+212 672-662517</span></p>
+                        <p class="card-text contact-us-card-left-info">Personal: <span class="contact-us-card-right-info" >+212 632-716448</span></p>
                       </div>
                     </div>
 
@@ -484,29 +485,29 @@
 
 
               <div class="get-in-touch-container" id="get-in-touch-container">
-                <div class="contact-us-container">
-                  <div class="tittle-services">
+                <div class="contact-us-container" >
+                  <div class="tittle-services" data-aos="fade" data-aos-duration="1000">
                     <h4 class="tracking-in-expand"><strong>Get in touch</strong></h4>
                   </div>
 
                   <form action="" class="get-in-touch-form">
                     <div class="container-form">
-                      <div class="group-from">
+                      <div class="group-from" data-aos="flip-up" data-aos-duration="1000">
                         <i class="bi bi-person-fill" id="get-in-touch-icon1"></i> 
                         <input type="text" class="get-in-touch-input1" id="txtname" placeholder="Name">
                       </div>
                     
     
-                      <div class="group-from">
-                        <i class="bi bi-envelope-at-fill" id="get-in-touch-icon2"></i>
+                      <div class="group-from" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="300">
+                        <i class="bi bi-envelope-at-fill" id="get-in-touch-icon2" ></i>
                         <input type="text" class="get-in-touch-input2" id="txtEmail" placeholder="Email">
                       </div>
     
-                      <div class="group-from">
+                      <div class="group-from" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="600">
                         <i class="bi bi-chat-right-dots-fill" id="get-in-touch-icon3"></i>
                         <textarea   id="" cols="30" rows="10" placeholder="Message" class="get-in-touch-input3"></textarea>
                       </div>  
-                      <button id="" type="submit" class="submit-get-in-touch"><strong>Send message</strong></button>
+                      <button id="" type="submit" class="submit-get-in-touch" data-aos="flip-up" data-aos-duration="1000" data-aos-delay="100"><strong>Send message</strong></button>
                     </div>
 
                     
@@ -548,7 +549,7 @@
 
 
   </div>
-  <nav class="right-part">
+  <nav class="right-part" data-aos="flip-right" data-aos-duration="1000">
     <div class="navbar-header">
       <button class="navbar-button"><i class="bi bi-list" id="navbar-button-icon"></i></button>
     </div>
@@ -557,7 +558,7 @@
     </div> -->
     <div class="navbar-container">
       <ul class="list-menu" >
-        <li class="navbar-link"><a href="">HOME</a></li>
+        <li class="navbar-link"><a href="#page">HOME</a></li>
         <li class="navbar-link"><a href="#Services-part">SERVICCES</a></li>
         <li class="navbar-link"><a href="#Project-part">PROJECT</a></li>
         <li class="navbar-link"><a href="#Education-part">WORK</a></li>
@@ -578,6 +579,12 @@
     
 
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {once: false}
+    );
+  </script>
 
 </body>
 </html>
