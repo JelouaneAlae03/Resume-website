@@ -1427,6 +1427,7 @@ height: fit-content;
     margin: 0;
     display: flex;
     padding: 0.4rem 0.2rem;
+    display: none;
   }
 
   .menu-header-icon >button{
@@ -1453,7 +1454,7 @@ height: fit-content;
 
 
   .text-header{
-
+    /* padding: 0 5rem; */
     display: flex;
     flex-direction: column;
     justify-content: center
@@ -1462,8 +1463,7 @@ height: fit-content;
 
   .text-header>h2{
     font-size: 2.8rem;
-    text-align: center;
-    margin-top: 5rem;
+    text-align: center; 
   }
 
   #btn-Discover{
@@ -1486,7 +1486,6 @@ height: fit-content;
     font-size: 0.9rem;
     text-align: left;
     width: 50%;
-    
   }
 
   .number-info-list{
@@ -1528,7 +1527,7 @@ height: fit-content;
   }
 
   .Recommendations-cards{
-    margin: 0rem  0 1rem 0;
+    margin: 2rem  0 1rem 0;
     width: 100vw;
   }
 
