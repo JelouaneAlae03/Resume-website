@@ -402,6 +402,8 @@ li{
   font-family: 'Montserrat', sans-serif;
   font-size: 2.7rem;
   margin-top: 2rem;
+  font-weight: 900;
+    letter-spacing: 0.1rem;
 }
 
 #btn-Discover{
@@ -1135,44 +1137,32 @@ height: fit-content;
   transition: 0.2s ease-out;
 }
 
-.submit-get-in-touch{
-  padding: 1rem 2rem;
-  background-color: #F9F871;
-  border: none;
-  margin-top:1rem ;
-}
-
-/* .submit-get-in-touch:hover{
-  transition: ease-in-out 0.2s;
-  margin-left: 10px;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .submit-get-in-touch {
   position: relative;
   border: none;
-  background-color: #F9F871;
-  color: rgba(0, 0, 0, 0.87);
   overflow: hidden;
   letter-spacing: 0.1rem;
+  padding: 1rem 2rem;
+  margin-top:1rem ;
+  color: black;
+  background-color:#F8F971 ;
  }
 
 
- .submit-get-in-touch::before,
+.submit-get-in-touch:focus{
+  border: none;
+  outline: none;
+ }
+ .submit-get-in-touch:hover{  transition: ease-in 0.3s;
+  transition: all 250ms;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+
+ /* .submit-get-in-touch::before,
  .submit-get-in-touch::after {
   position: absolute;
   top: 0;
@@ -1184,7 +1174,6 @@ height: fit-content;
 
  .submit-get-in-touch::before {
   content: "";
-  background: #02262e;
   width: 120%;
   left: -10%;
   transform: skew(30deg);
@@ -1195,10 +1184,11 @@ height: fit-content;
   transform: translate3d(100%, 0, 0);
   color: white;
  }
+*/
+ /* .submit-get-in-touch:active {
+  border: none;
 
- .submit-get-in-touch:active {
-  transform: scale(0.95);
- }
+ }  */
 
 
 
