@@ -1354,6 +1354,23 @@ height: fit-content;
 } 
 
 
+.page-footer{
+  background-color: #00404F;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:1.5rem;
+}
+
+.page-footer>h5{
+  font-size: 1rem;
+  opacity: 60%;
+  height: fit-content;
+  margin: 0;
+}
+
+
 
 @-webkit-keyframes rotate-90-ccw {
   0% {
