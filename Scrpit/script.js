@@ -41,31 +41,31 @@ $(Document).ready(function(){
 
 
 
-    var mediaQuery = window.matchMedia("(max-width: 786px)");
+    // var mediaQuery = window.matchMedia("(max-width: 786px)");
 
-    if (mediaQuery.matches) {
-        // AOS.init(
-        //     {once: false,delay:10}
-        // );
+    // if (mediaQuery.matches) {
+    //     // AOS.init(
+    //     //     {once: false,delay:10}
+    //     // );
         
-        $(".left-bar").hide();
+    //     $(".left-bar").hide();
 
-        $(".menu-mobile-mode-button").click(function(){
-            $(".left-bar").toggle();
+    //     $(".menu-mobile-mode-button").click(function(){
+    //         $(".left-bar").toggle();
             
-            $(".main-content-page").css({'filter':'blur(5px)'});
-            $(".menu-mobile-mode-button").css({'filter':'blur(0px)'});
-        });
+    //         $(".main-content-page").css({'filter':'blur(5px)'});
+    //         $(".menu-mobile-mode-button").css({'filter':'blur(0px)'});
+    //     });
 
 
-        $(".left-bar").mouseleave(function(){
-            $(".left-bar").hide();
-            $(".main-content-page").css({'filter':'blur(0px)'});
-        });
+    //     $(".left-bar").mouseleave(function(){
+    //         $(".left-bar").hide();
+    //         $(".main-content-page").css({'filter':'blur(0px)'});
+    //     });
 
 
 
-    }
+    // }
 
 
 
