@@ -1408,15 +1408,13 @@ height: fit-content;
     overflow: hidden;
     display:block;
     justify-content: center;
-    he
   }
 
   .left-bar{
     position: fixed;
     z-index:100; 
     /* display: none; */
-    height: 130vw !important;
-    overflow-y: hidden;
+    height: 300vw !important;
   }
 
   .main-content-page{
