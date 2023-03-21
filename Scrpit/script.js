@@ -1,52 +1,7 @@
-var isavailble =true;
+$(document).ready(function(){
 
-if(isavailble==false){
-    $(Document).ready(function(){
-        $('.page').hide();
-        $('body').css({'background-image':'url(/img/website_image.png)'});
-        $('body').css({'background-repeat':'no-repeat'});
-        // $('body').css({'background-size':'cover'});
-        $('body').css({'text-size-adjust':'none'});
-        $('#OutOfServicesMessage').removeClass("").addClass("Website-work-div");
-        $('#OutOfServicesMessage>h2').removeClass("").addClass("Website-work-text");
-    });
-
-
-    
-}
-else{
-    $(Document).ready(function(){
-        $('#OutOfServicesMessage').hide();
-    }); 
-}
-
-
-
-
-
-
-$(Document).ready(function(){
-    
-    var lastScrollTop =0;
-    $(".personal-info").scroll(function(event){
-        var st = $(this).scrollTop();
-        if (st < lastScrollTop){
-            $("#line-first").css('opacity',1);
-            $("#line-second").css('opacity',1);
-            } else {
-            $("#line-first").css('opacity',1);
-            $("#line-second").css('opacity',1);
-        }
-        lastScrollTop = st;
-
-
-    });
-
-
-
-    var mediaQuery = window.matchMedia("(max-width: 641px)");
-
-    if (mediaQuery.matches) {
+    if (window.matchMedia('screen and (max-width: 768px)').matches) {
+        //website in mobile mode
 
         document.addEventListener("DOMContentLoaded", function() {
             var rightPart = document.getElementsByClassName("right-part");
@@ -55,8 +10,6 @@ $(Document).ready(function(){
 
         
         $(".left-bar").hide();
-        // $(".right-part").hide();
-
         $(".left-menu-icon").click(function(){
             $(".left-bar").toggle();
             $(".main-content-page").css({'filter':'blur(1px)'});
@@ -64,70 +17,154 @@ $(Document).ready(function(){
         });
 
 
-        // $(".left-bar").mouseleave(function(){
-        //     $(".left-bar").hide();
-        //     $(".main-content-page").css({'filter':'blur(0px)'});
-        //     $("body").css({'overflow':'Scroll'});
-        // });
-
         $('#close-menu-icon').click(function(){
             $('.left-bar').hide();
             $(".main-content-page").css({'filter':'blur(0px)'});
             $("body").css({'overflow':'Scroll'});
         });
+        
+        
+    }else{
+        //desktop mode
+        
+    }
+
+    FocusFun('.get-in-touch-input3',"#get-in-touch-icon3")
+    FocusFun('.get-in-touch-input2',"#get-in-touch-icon2")
+    FocusFun('.get-in-touch-input1',"#get-in-touch-icon1")
+    mouseleaveFun('.get-in-touch-input3',"#get-in-touch-icon3")
+    mouseleaveFun('.get-in-touch-input2',"#get-in-touch-icon2")
+    mouseleaveFun('.get-in-touch-input1',"#get-in-touch-icon1")
+    opacity_line();
+
+    function formValidation (){
+        var name = document.getElementById('txtname').value
+        var Email = document.getElementById('txtEmail').value
+        var Message = document.getElementById('txtMessage').value
+
+        if(name==""&&Email==''&&Message==''){
+            $("#errorName").css({'display':'block'})
+            $("#errorEmail").css({'display':'block'})
+            $("#errorMessage").css({'display':'block'})
+        }
 
 
-        // $('.right-menu-icon').click(function(){
-        //     $('.right-part').toggle();
-        //     $(".main-content-page").css({'filter':'blur(1px)'});
-        //     $("body").css({'overflow':'hidden'});
-        // });
+        if(name==""){
+            $("#errorName").css({'display':'block'})
+        }else {
+            if(Email==''){
+                $("#errorEmail").css({'display':'block'})
+            }
+            else{
+                if(Message==''){
+                    $("#errorMessage").css({'display':'block'})
+                }
+                else{
+                    sendEmail();
+                }
+            }
 
-     }
+        }
+
+    }
 
 
-
-
-    $(".get-in-touch-input1").focus(function(){
-        $("#get-in-touch-icon1").css({"background-color" : "#F9F871"});
-        $("#get-in-touch-icon1").css({"color" : "black"});
-
+    $('.-get-in-touch').click(function(){
+        formValidation()
     });
-    
-    $(".get-in-touch-input1").mouseleave(function(){
-        $("#get-in-touch-icon1").css({"background-color" : "#033540"});
-        $("#get-in-touch-icon1").css({"color" : "white"});
-    });
+
+    $('#txtname').on('input',function(){
+        $("#errorName").hide()
+    })
+
+    $('#txtEmail').on('input',function(){
+        $("#errorEmail").hide()
+    })
+
+    $('#txtMessage').on('input',function(){
+        $("#errorMessage").hide()
+    })
 
     
-    $(".get-in-touch-input2").focus(function(){
-        $("#get-in-touch-icon2").css({"background-color" : "#F9F871"});
-        $("#get-in-touch-icon2").css({"color" : "black"});
-
-    });
-    
-    $(".get-in-touch-input2").mouseleave(function(){
-        $("#get-in-touch-icon2").css({"background-color" : "#033540"});
-        $("#get-in-touch-icon2").css({"color" : "white"});
-    });
-
-    
-    $(".get-in-touch-input3").focus(function(){
-        $("#get-in-touch-icon3").css({"background-color" : "#F9F871"});
-        $("#get-in-touch-icon3").css({"color" : "black"});
-
-    });
-    
-    $(".get-in-touch-input3").mouseleave(function(){
-        $("#get-in-touch-icon3").css({"background-color" : "#033540"});
-        $("#get-in-touch-icon3").css({"color" : "white"});
-    });
+    function FocusFun (selector,elementmod) {
+        $(selector).focus(function(){
+            $(elementmod).css({"background-color" : '#F9F871'});
+            $(elementmod).css({"color" : "black"});
+        });
+    }
     
 
+    function mouseleaveFun (selector,elementmod) {
+        $(selector).mouseleave(function(){
+            $(elementmod).css({"background-color" : '#033540'});
+            $(elementmod).css({"color" : "white"});
+        });
+    }
+
+
+
+    function visibility(isavailble){
+
+        if(isavailble==false){
+            $(Document).ready(function(){
+                $('.page').hide();
+                $('body').css({'background-image':'url(/img/website_image.png)'});
+                $('body').css({'background-repeat':'no-repeat'});
+                // $('body').css({'background-size':'cover'});
+                $('body').css({'text-size-adjust':'none'});
+                $('#OutOfServicesMessage').removeClass("").addClass("Website-work-div");
+                $('#OutOfServicesMessage>h2').removeClass("").addClass("Website-work-text");
+            });
+        }
+        else{
+            $(Document).ready(function(){
+                $('#OutOfServicesMessage').hide();
+            }); 
+        }
+    }
+
+
+    function sendEmail(){
+        var   txtName = document.getElementById('txtname').value;
+        var   txtEmail = document.getElementById('txtEmail').value;
+        var   txtMessage = document.getElementById('txtMessage').value;
+
+
+        var content = 'Name '+txtName+'----' + 'Email '+txtEmail +'----'+'Message '+txtMessage;
+
+        Email.send({
+            SecureToken : "e25da4b0-622e-4a93-b301-b32ca5bb6072", //add your token here
+            To : 'jel.alae37@gmail.com', 
+            From : "jel.alae37@gmail.com",
+            Subject : "New client From Portfolio",
+            Body :content
+        }).then(
+        message => alert(message)
+        );
+
+
+    }
+
+
+
+    function opacity_line(){
+        var lastScrollTop =0;
+        $(".personal-info").scroll(function(event){
+            var st = $(this).scrollTop();
+            if (st < lastScrollTop){
+                $("#line-first").css('opacity',1);
+                $("#line-second").css('opacity',1);
+                } else {
+                $("#line-first").css('opacity',1);
+                $("#line-second").css('opacity',1);
+            }
+        lastScrollTop = st;
+        }   
+    )}
+
+
+
+
+    
 });
-
-
-
-
-
 

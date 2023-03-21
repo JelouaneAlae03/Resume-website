@@ -1141,7 +1141,7 @@ height: fit-content;
   transition: 0.2s ease-out;
 }
 
-.submit-get-in-touch {
+.-get-in-touch {
   position: relative;
   border: none;
   overflow: hidden;
@@ -1153,11 +1153,11 @@ height: fit-content;
  }
 
 
-.submit-get-in-touch:focus{
+.-get-in-touch:focus{
   border: none;
   outline: none;
  }
- .submit-get-in-touch:hover{  transition: ease-in 0.3s;
+ .-get-in-touch:hover{  transition: ease-in 0.3s;
   transition: all 250ms;
   font-size: 16px;
   user-select: none;
@@ -1194,7 +1194,13 @@ height: fit-content;
 
  }  */
 
-
+ .errorNullMessage{
+  margin: 0;
+  color: #F9F871;
+  display: none;
+  /* transition: ease 0.2s; */
+  transition:opacity 1s linear;
+ }
 
 /* ______________________Loading page style______________________ */
 
@@ -1594,7 +1600,10 @@ height: fit-content;
     display:  none;
   }
 
-    
+
+  #card-Recommendations-container img{
+    margin-top: 0.4rem;
+}
 }
 
 
