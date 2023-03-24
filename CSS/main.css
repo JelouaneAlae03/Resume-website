@@ -41,21 +41,7 @@ body{
 }
 
 
-@media (max-width : 641px){
-  .Website-work-text{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.3rem;
-    width: 100%;
-    height: 100%;
-    color: rgb(255, 255, 255);
-    background-color: #02262e;
-    min-width: 2.5rem;
-    margin-top: 1rem;
-    padding: 0.5rem;
-    transition: all 0.5s;
-  }
-}
+
 
 
 
@@ -602,7 +588,6 @@ li{
   margin-bottom: 20px;
   position: relative;
   display: flex;
-  margin: 20px 0;
   border-radius: 6px;
   align-self: center;
   width: 50vw;
@@ -777,45 +762,6 @@ li{
   content: none;
 }
 
-@media (max-width: 641px) {
-
-  .timeline{
-    width: 100vw;
-  }
-  .timeline__event {
-    flex-direction: column;
-    align-self: center;
-    width: 65vw;
-  }
-  .timeline__event__content {
-    width: 100%;
-  }
-  .timeline__event__icon {
-    border-radius: 6px 6px 0 0;
-    width: 100%;
-    margin: 0;
-    box-shadow: none;
-  }
-  .timeline__event__icon:before, .timeline__event__icon:after {
-    display: none;
-  }
-  .timeline__event__date {
-    border-radius: 0;
-    padding: 20px;
-  }
-  .timeline__event:nth-child(2n+1) {
-    flex-direction: column;
-    align-self: center;
-  }
-  .timeline__event:nth-child(2n+1) .timeline__event__date {
-    border-radius: 0;
-    padding: 20px;
-  }
-  .timeline__event:nth-child(2n+1) .timeline__event__icon {
-    border-radius: 6px 6px 0 0;
-    margin: 0;
-  }
-}
 @-webkit-keyframes fillLeft {
   100% {
     right: 100%;
@@ -845,6 +791,51 @@ li{
   100% {
     left: 100%;
   }
+}
+
+
+@media  (min-width: 768px)and (max-width: 1200px)   {
+
+  .left-bar{
+    display: none;
+  }
+  
+  .main-content-page{
+    padding: 0 0 0 0;
+    width: 100%;
+    margin: 1rem 0 0 0;
+  }
+
+  .right-part{
+    display: none;
+  }
+  .info-list{
+    margin-top: 2rem;
+  }
+
+  .timeline__event{
+    width: 70vw;
+  }
+  .qr-code{
+    width: 9rem;
+    margin: 1.7rem 3rem 0 6rem
+  }
+  .text-header{
+    width: fit-content;
+    margin-top: 1rem;
+  }
+  .cards-project{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #project-card{
+    width: 70vw;
+  }
+  
+  .text-header h2{
+    font-size: 2.4rem;
+  }
+
 }
 
 
@@ -1404,7 +1395,7 @@ height: fit-content;
 }
 
 
-@media (max-width:641px){
+@media (max-width:768px){
 
   *{
     box-sizing: border-box;
@@ -1444,6 +1435,20 @@ height: fit-content;
     position: relative;
   }
 
+  .Website-work-text{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 255, 255);
+    background-color: #02262e;
+    min-width: 2.5rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    transition: all 0.5s;
+  }
+
   .container{
     margin: 0;
     padding: 0;
@@ -1481,6 +1486,7 @@ height: fit-content;
     color: rgba(255, 255, 255, 0.896);
     border: 0px ;
     font-size: 1.6rem;
+    margin-top: 0.6rem;
   }
   
   .right-menu-icon{
@@ -1524,10 +1530,11 @@ height: fit-content;
     flex-wrap:wrap;
     width: fit-content;
     /* justify-content: space-between; */
+    margin: 0 auto;
   }
 
   .info-list>li{
-    font-size: 0.9rem;
+    /* font-size: 0.9rem; */
     text-align: left;
     width: 50%;
   }
@@ -1546,6 +1553,8 @@ height: fit-content;
     flex-direction: column;
     margin-bottom: 0.5rem;
     width: 100vw;
+    display: flex;
+    align-items: center;
   }
 
   .cards-contianer{
@@ -1563,8 +1572,45 @@ height: fit-content;
   .cards-project>#project-card{
     display: flex;
     justify-content: center;
-    width: 90vw;
+    width: 70vw;
     margin: 1rem auto;
+  }
+
+  .timeline{
+    width: 100vw;
+  }
+  .timeline__event {
+    flex-direction: column;
+    align-self: center;
+    width: 65vw;
+  }
+  .timeline__event__content {
+    width: 100%;
+  }
+  .timeline__event__icon {
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    margin: 0;
+    box-shadow: none;
+  }
+  .timeline__event__icon:before, .timeline__event__icon:after {
+    display: none;
+  }
+  .timeline__event__date {
+    border-radius: 0;
+    padding: 20px;
+  }
+  .timeline__event:nth-child(2n+1) {
+    flex-direction: column;
+    align-self: center;
+  }
+  .timeline__event:nth-child(2n+1) .timeline__event__date {
+    border-radius: 0;
+    padding: 20px;
+  }
+  .timeline__event:nth-child(2n+1) .timeline__event__icon {
+    border-radius: 6px 6px 0 0;
+    margin: 0;
   }
 
   .card-img{
@@ -1600,10 +1646,9 @@ height: fit-content;
     display:  none;
   }
 
-
   #card-Recommendations-container img{
     margin-top: 0.4rem;
-}
+  }
 }
 
 

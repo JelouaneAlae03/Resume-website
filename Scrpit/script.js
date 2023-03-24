@@ -141,8 +141,6 @@ $(document).ready(function(){
         }).then(
         message => alert(message)
         );
-
-
     }
 
 
