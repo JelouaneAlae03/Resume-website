@@ -1428,7 +1428,7 @@ height: fit-content;
   }
 
   .personal-info{
-    padding:  10rem 1.5rem 0  1.5rem;
+    overflow-x: hidden;
   }
 
   .main-content-page{
