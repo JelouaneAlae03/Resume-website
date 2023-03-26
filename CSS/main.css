@@ -468,7 +468,7 @@ li{
   /* position: absolute;  */
   width: 11rem;
   height: auto;
-  top: 5rem;
+  top:4rem;
   right: -11rem; 
   /* border: 0.5rem solid white; */
   border-radius: 1rem;
@@ -1427,6 +1427,9 @@ height: fit-content;
     right: 2rem;
   }
 
+  .personal-info{
+    padding:  10rem 1.5rem 0  1.5rem;
+  }
 
   .main-content-page{
     width: 100vw;
