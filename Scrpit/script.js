@@ -29,6 +29,10 @@ $(document).ready(function(){
         
     }
 
+    $(window).on('load',function(){
+        $('.loader-wrapper').fadeOut('slow');
+    })
+
     FocusFun('.get-in-touch-input3',"#get-in-touch-icon3")
     FocusFun('.get-in-touch-input2',"#get-in-touch-icon2")
     FocusFun('.get-in-touch-input1',"#get-in-touch-icon1")

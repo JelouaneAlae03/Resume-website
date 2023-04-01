@@ -22,6 +22,38 @@ body{
 
 }
 
+.loader-wrapper{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  margin: 0 auto;
+}
+
+.loader {
+  width: 32px;
+  height: 72px;
+  display: flex;
+  left: 5px;
+  position: relative;
+  border: 2px solid #FFF;
+  box-sizing: border-box;
+  animation: animloader 2s linear infinite alternate;
+  color: #008F7D;
+  border-radius: 0 0 4px 4px;
+  transform: perspective(140px) rotateX(-45deg);
+  margin: auto auto;
+  top: 50%;
+}
+
+@keyframes animloader {
+  0% {
+    box-shadow: 0 0  inset;
+  }
+  100% {
+    box-shadow: 0 -70px inset;
+  }
+}
+
 .Website-work-div{
   width: 100%;
   height: 100%;
@@ -321,6 +353,7 @@ li{
 .page{
   display: flex;
   flex-direction: row;
+  position: relative;
 }
 
 .navbar{
