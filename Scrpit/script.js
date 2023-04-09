@@ -33,6 +33,36 @@ $(document).ready(function(){
         $('.loader-wrapper').fadeOut('slow');
     })
 
+
+    // $('body').removeClass('page');
+    // var dismissLoadingScreen = function() {
+    //     $('.loader-wrapper').hide();
+    //     $('body').addClass('page');
+    // };
+        
+    // var wait3seconds = function() {
+    //    return setTimeout(dismissLoadingScreen, 10000);
+    // };
+
+
+
+
+    let element = document.getElementsByClassName("body");
+
+// show after 2 seconds
+// RECOMMENDATION: use window.setTimeout instead of setTimeout
+// NOTE: use a callback function, not an embedded named function
+    window.setTimeout(function() {
+        element.classList.remove("page");
+    }, 2000);
+
+    // hide after 3 seconds
+    window.setTimeout(function() {
+        element.classList.add("page");
+    }, 3000);
+
+
+
     FocusFun('.get-in-touch-input3',"#get-in-touch-icon3")
     FocusFun('.get-in-touch-input2',"#get-in-touch-icon2")
     FocusFun('.get-in-touch-input1',"#get-in-touch-icon1")
