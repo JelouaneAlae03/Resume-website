@@ -19,6 +19,14 @@ $(document).ready(function () {
       $(".main-content-page").css({ filter: "blur(0px)" });
       $("body").css({ overflow: "Scroll" });
     });
+
+    $("body").mouseup(function (e) {
+        var container = $(".left-bar");
+        // if the target of the click isn't the container nor a descendant of the container
+        if (!container.is(e.target) && container.has(e.target).length === 0) {
+          container.hide();
+        }
+      });
   } else {
     //desktop mode
   }
@@ -192,11 +200,5 @@ $(document).ready(function () {
   });
 
   //close the left bar when the user click outside of it
-  $("body").mouseup(function (e) {
-    var container = $(".left-bar");
-    // if the target of the click isn't the container nor a descendant of the container
-    if (!container.is(e.target) && container.has(e.target).length === 0) {
-      container.hide();
-    }
-  });
+  
 });
