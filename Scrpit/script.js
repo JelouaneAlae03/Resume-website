@@ -187,8 +187,6 @@ $(document).ready(function () {
     let ImgPickeraID = $(this).attr("id");
     let img = document.getElementById(ImgPickeraID);
     let NewImage = img.cloneNode(true);
-    $(".left-bar").css({ filter: "blur(5px)" });
-    $(".main-content-page").css({ filter: "blur(5px)" });
     $("#imagepreview").attr("src", $(NewImage).attr("src")); // here asign the image to the modal when the user click the enlarge link
     $("#imagemodal").modal("show"); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
   });
