@@ -38,6 +38,8 @@ body {
 
 }
 
+
+
 .hello{
   color: #f9f971;
 }
@@ -827,6 +829,7 @@ li {
     display: none;
   }
 
+
   .main-content-page {
     padding: 0 0 0 0;
     width: 100%;
@@ -1385,7 +1388,10 @@ li {
     padding: 0px;
     margin: 0px;
   }
-
+  #imagepreview{
+    width: 100%;
+    height: auto;
+  }
   .page {
     overflow: hidden;
     display: block;
