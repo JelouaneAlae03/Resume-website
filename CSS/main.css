@@ -27,15 +27,16 @@ body {
   z-index: 1000;
   
 }
-.modal-content{
-  width: fit-content;
-}
 
 #imagepreview{
   width: 40rem;
   height: auto;
   /* margin: 0 auto; */
 
+}
+
+#ServicesModal{
+  display: none;
 }
 
 
@@ -106,8 +107,6 @@ body {
   margin: auto;
 }
 
-.Website-Not-Work {
-}
 
 .title {
   font-family: "Montserrat", sans-serif;
@@ -272,6 +271,7 @@ li {
   stroke-linecap: round;
   animation: progress 2s ease-out forwards;
 }
+
 
 .circular-chart.orange .circle {
   stroke: #f9f871;
@@ -508,7 +508,7 @@ li {
   right: -12rem;
   /* border: 0.5rem solid white; */
   border-radius: 1rem;
-  margin: 2rem 0rem 0 6rem;
+  margin: 2rem 0rem 0 12rem;
 }
 
 .number-info {
@@ -865,6 +865,11 @@ li {
   .text-header h2 {
     font-size: 2.4rem;
   }
+
+  #ServiceModalContent{
+
+    width: 20rem;
+  }
 }
 
 .Education {
@@ -1101,7 +1106,7 @@ li {
   border: none;
   padding: 1rem;
   width: 100%;
-  color: rgba(234, 234, 234, 0.561);
+  color: rgb(234, 234, 234);
 }
 
 .group-from > .get-in-touch-input1:focus {
@@ -1127,7 +1132,7 @@ li {
   border: none;
   padding: 1rem;
   width: 100%;
-  color: rgba(234, 234, 234, 0.561);
+  color: rgb(234, 234, 234);
   min-height: 3.5rem;
   max-height: 15rem;
 }
@@ -1395,6 +1400,7 @@ li {
   }
   .modal-content{
     margin-top: 15%;
+    background-color: #008f7d;
   }
   .page {
     overflow: hidden;
@@ -1635,3 +1641,5 @@ li {
     margin-top: 0.4rem;
   }
 }
+
+
