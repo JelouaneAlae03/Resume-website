@@ -27,16 +27,15 @@ body {
   z-index: 1000;
   
 }
+.modal-content{
+  width: fit-content;
+}
 
 #imagepreview{
   width: 40rem;
   height: auto;
   /* margin: 0 auto; */
 
-}
-
-#ServicesModal{
-  display: none;
 }
 
 
@@ -107,6 +106,8 @@ body {
   margin: auto;
 }
 
+.Website-Not-Work {
+}
 
 .title {
   font-family: "Montserrat", sans-serif;
@@ -271,7 +272,6 @@ li {
   stroke-linecap: round;
   animation: progress 2s ease-out forwards;
 }
-
 
 .circular-chart.orange .circle {
   stroke: #f9f871;
@@ -865,11 +865,6 @@ li {
   .text-header h2 {
     font-size: 2.4rem;
   }
-
-  #ServiceModalContent{
-
-    width: 20rem;
-  }
 }
 
 .Education {
@@ -1305,9 +1300,6 @@ li {
   border: transparent 0px solid;
 }
 
-.navbar-container {
-}
-
 .list-menu {
   padding: 1rem 2.4rem;
   height: fit-content;
@@ -1334,9 +1326,6 @@ li {
   text-align: center;
   letter-spacing: 1.5px;
   transform: rotate(10px);
-}
-
-.navbar-link:hover {
 }
 
 .navbar-link > a:hover {
@@ -1400,7 +1389,6 @@ li {
   }
   .modal-content{
     margin-top: 15%;
-    background-color: #008f7d;
   }
   .page {
     overflow: hidden;
@@ -1488,9 +1476,6 @@ li {
     margin-top: 0.6rem;
   }
 
-  .right-menu-icon {
-  }
-
   .header-cover {
     height: 35rem;
     border-radius: 0;
@@ -1504,12 +1489,12 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100vw;
   }
 
   .text-header > h2 {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     text-align: center;
-    margin-top: 0;
   }
 
   #btn-Discover {
@@ -1517,8 +1502,12 @@ li {
   }
 
   .qr-code {
-    margin: 1.5rem auto 0 auto;
+    margin: 2rem auto 0 auto;
     width: 9rem;
+  }
+
+  .multiple-text{
+    font-size: 2.28rem;
   }
 
   .info-list {
@@ -1640,6 +1629,8 @@ li {
   #card-Recommendations-container img {
     margin-top: 0.4rem;
   }
+
+  #txtMessage{
+    color: white;
+  }
 }
-
-
