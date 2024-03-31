@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JELOUANE Alae</title>
+
+  <link rel="stylesheet" href="/CSS/bootstrap.min.css">
+  <script src="/Scrpit/jquery-3.6.2.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="/CSS/main.css">
+</head>
+
+<body>
+
+  <!-- <div class="loader-wrapper">
+    <span class="loader"></span>
+  </div> -->
+  <!-- <div class="imagePanel">
+
+  </div> -->
+
+
+  <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+          <img src="" id="imagepreview">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="page p-0" id="page">
+    <div class="left-bar" data-aos="fade-right" id="navbarColor01">
+      <div class="card" id="card-personal-info">
+        <i id="close-menu-icon" class="bi bi-arrow-left"></i>
+        <img class="card-img" src="/img/pro image - Edited.png">
+        <div class="card-body">
+          <a href="#" class="nav-link active">
+            <h5 class="card-tittle"><strong> JELOUANE Alae</strong></h5>
+          </a>
+          <P class="card-text">Full stack developper </P>
+        </div>
+      </div>
+
+      <div class="personal-info">
+        <ul type="none">
+          <li>Country:<span class="right-info">Morocco</span></li>
+          <li>City:<span class="right-info">Casablanca</span></li>
+          <li>Age:<span class="right-info">22 </span></li>
+        </ul>
+
+        <div class="line" id="line-first"></div>
+        <div class="content">
+          <h6 class="title"><strong>Languages</strong></h6>
+        </div>
+
+        <div class="flex-wrapper p-2">
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circular-chart orange">
+              <path class="circle" stroke-dasharray="100, 100" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <text x="18" y="20.35" class="percentage">100%</text>
+              <p class="circle-tittle">Arabic</p>
+            </svg>
+          </div>
+
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circular-chart orange">
+              <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <text x="18" y="20.35" class="percentage">65%</text>
+              <p class="circle-tittle">Frensh</p>
+            </svg>
+          </div>
+
+          <div class="single-chart">
+            <svg viewBox="0 0 36 36" class="circular-chart orange">
+              <path class="circle" stroke-dasharray="75, 100" d="M18 2.0845
+                      a 15.9155 15.9155 0 0 1 0 31.831
+                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+              <text x="18" y="20.35" class="percentage">75%</text>
+              <p class="circle-tittle">English</p>
+            </svg>
+          </div>
+        </div>
+
+        <div class="line" id="line-second"></div>
+
+        <div class="coding-part">
+          <div class="content">
+            <h6 class="title"><strong>Coding</strong></h6>
+
+            <div class="element">
+              <p>C# <span class="right-info">85%</span></p>
+              <div class="range" style="width: 14rem;"></div>
+            </div>
+
+            <div class="element">
+              <p>ASP.NET MVC<span class="right-info">85%</span></p>
+              <div class="range" style="width: 14rem;"></div>
+            </div>
+
+            <div class="element">
+              <p>SQL Server<span class="right-info">75%</span></p>
+              <div class="range" style="width: 11.35rem;;"></div>
+            </div>
+
+            <div class="element">
+              <p class="">ASP.NET MVC Core<span class="right-info">75%</span></p>
+              <div class="range" style="width: 11.35rem;"></div>
+            </div>
+            <div class="element">
+              <p>Html/Css/Bootstrap/JS /JQ<span class="right-info">80%</span></p>
+              <div class="range " style="width: 12.9rem;"></div>
+            </div>
+
+            <div class="element">
+              <p>React JS<span class="right-info">70%</span></p>
+              <div class="range" style="width: 10rem;"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="line"></div>
+
+
+
+        <div class="Knowledge-part">
+          <div class="content">
+            <h6 class="title"><strong>Knowledge</strong></h6>
+          </div>
+
+          <ul type="none">
+            <li><i class="bi bi-check-lg " id="checkIcon"> </i>Entity Framework / Linq</li>
+            <li><i class="bi bi-check-lg " id="checkIcon"> </i>Uml / Git </li>
+            <li><i class="bi bi-check-lg " id="checkIcon"> </i>JSON / Rest APi / AJAX</li>
+            <li><i class="bi bi-check-lg " id="checkIcon"> </i>Trello / GitHub / Postman</li>
+            <li><i class="bi bi-check-lg " id="checkIcon"> </i>IIS Web Server / HangFire </li>
+
+          </ul>
+
+
+        </div>
+
+        <div class="line"></div>
+
+        <div class="Cv-part">
+          <h6 class="cv-link"><a
+              href="https://drive.google.com/file/d/1NMf-QI_yiRyWjW_2eJRmSgVuNb8-OtHQ/view?usp=sharing" target="_blank">
+              DOWNLOAD CV <i class="bi bi-arrow-down-circle-fill"></i></a></h6>
+        </div>
+      </div>
+
+
+
+      <div class="footer">
+        <a href="https://www.linkedin.com/in/jelouanealae/" target="_blank" class="navbar-brand"><i
+            class="bi bi-linkedin"></i></a>
+        <a href="https://www.instagram.com/alae.jelouane/" target="_blank" class="navbar-brand"><i
+            class="bi bi-instagram"></i></a>
+        <a href="https://github.com/JelouaneAlae03" target="_blank" class="navbar-brand"><i class="bi bi-github"></i></a>
+        <a href="mailto:jelouanealae.job@gmail.com" target="_blank" class="navbar-brand"><i
+            class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+    <!-- _________________________________________Container  part______________________________________________  -->
+
+    <div class="main-content-page" id="main-content-page">
+      <div class="container">
+        <div class="menu-header-icon">
+          <button class="left-menu-icon"><i class="bi bi-three-dots-vertical"></i></button>
+          <!-- <button class="right-menu-icon"><i class="bi bi-list"></i></button> -->
+        </div>
+
+        <div class="header" data-aos="fade-down">
+          <img src="/img/cover.png" alt="" class="header-cover">
+          <div class="text-header">
+            <!-- <button class="menu-mobile-mode-button"><i class="bi bi-three-dots-vertical"></i></button> -->
+          </div>
+          <div class="text-header">
+            <!-- <button class="menu-mobile-mode-button"><i class="bi bi-three-dots-vertical"></i></button> -->
+            <!-- <h2 class="tracking-in-expand"><strong> <span class="hello">Let's </span>Discover my<br>Amazing Work<br>Space!</strong></h2> -->
+            <h2 class="tracking-in-expand">
+              <span class="hello">Let's</span>
+              <span>Discover</span> <br>
+              <span> My Amazing</span><br> <span class="multiple-text hello"></span>
+            </h2>
+
+            <img src="/img/Lifetime Code qr 3103.png" alt="" class="qr-code">
+          </div>
+          <!-- <a href="#Services-part"><button id="btn-Discover" >Discover Now</button></a> -->
+
+        </div>
+
+        <div class="number-info">
+          <ul type="none" class="info-list">
+            <li data-aos="fade-right" data-aos-delay="300"><span class="number-info"><strong
+                  class="number-info-list">1+</strong></span>
+              <p>Years Experience</p>
+            </li>
+            <li data-aos="fade-down" data-aos-delay="700"><span class="number-info"><strong
+                  class="number-info-list">3</strong></span>
+              <p>Completed Projects</p>
+            </li>
+            <li data-aos="fade-down" data-aos-delay><span class="number-info"><strong
+                  class="number-info-list">2</strong></span>
+              <p>Happy Customers</p>
+            </li>
+            <li data-aos="fade-left" data-aos-delay="1300"><span class="number-info-last"><strong
+                  class="number-info-list">1</strong></span>
+              <p>Certificates</p>
+            </li>
+          </ul>
+        </div>
+        <!-- _________________________________________Services part______________________________________________  -->
+
+        <div class="Services" id="Services-part">
+          <div class="tittle-services" data-aos="fade-left">
+            <h4><strong>Services</strong></h4>
+          </div>
+
+          <div class="cards-services">
+            <div class="card" id="card-Services" data-aos="fade-left">
+
+              <div class="card-body-service" id="service1">
+                <h2 class="card-tittle" id="card-tittle"><strong>Web Development Development</strong></h2>
+                <p id="card-descreption">Create a responsive web app using React.js for dynamic rendering and
+                  component-based architecture. Enhance it with HTML, CSS, and JavaScript, and streamline development
+                  with Bootstrap and jQuery. Manage code efficiently with Git and GitHub for collaborative version
+                  control.</p>
+                <a href="#get-in-touch-container" class="Card-service-link" id="OrderNowServices1">Order Now<span
+                    class="Card-service-link-icon"><i class="bi bi-arrow-right-short"></i></span></a>
+              </div>
+            </div>
+
+            <div class="card" id="card-Services" data-aos="fade-left">
+              <div class="card-body-service" id="service2">
+                <h2 class="card-tittle" id="card-tittle"><strong>Software Development</strong></h2>
+                <p id="card-descreption">
+                  In full-stack development, use C#, ASP.NET MVC, .NET Core MVC for backend, with SQL Server, Entity
+                  Framework, and LinqEF for databases. Employ Postman, Hang Fire, AJAX for testing, tasks, and
+                  communication. Integrate React.js, Rest API for dynamic interaction, deploy on a web server.</p>
+                <a href="#get-in-touch-container" class="Card-service-link" id="OrderNowServices2">Order Now<span
+                    class="Card-service-link-icon"><i class="bi bi-arrow-right-short"></i></span></a>
+              </div>
+            </div>
+
+
+            <div class="card" id="card-Services" data-aos="fade-left">
+              <!-- <div class="card-header-service">
+                      <img src="/img/web development image.jpg" alt="" class="card-img">
+                    </div> -->
+              <div class="card-body-service" id="service3">
+                <h2 class="card-tittle" id="card-tittle"><strong>Ecommerce website development</strong></h2>
+                <p id="card-descreption">Create an ecommerce application using WordPress and Elementor for seamless
+                  development. Utilize their intuitive platforms and plugins to craft visually stunning online stores.
+                  Integrate payment gateways seamlessly for a smooth shopping experience.</p>
+                <a href="#get-in-touch-container" class="Card-service-link" id="OrderNowServices3">Order Now<span
+                    class="Card-service-link-icon"><i class="bi bi-arrow-right-short"></i></span></a>
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+
+        <!-- _________________________________________Roadmap part______________________________________________  -->
+
+
+        <div class="Education" id="Education-part">
+          <div class="tittle-services">
+            <h4><strong>Education and work history</strong></h4>
+          </div>
+          <div class="timeline">
+            <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1" data-aos="fade-left">
+              <div class="timeline__event__icon ">
+                <i class="bi bi-book"></i>
+
+              </div>
+              <div class="timeline__event__date">
+                01-08-2020
+              </div>
+              <div class="timeline__event__content ">
+                <div class="timeline__event__title">
+                  Baccalaureate
+                </div>
+                <div class="timeline__event__description">
+                  <p>I graduated with honours in the branch of physics and chemistry from IBN ROCHD High School in
+                    Casablanca, Morocco.</p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="timeline__event animated fadeInUp delay-2s timeline__event--type2" data-aos="fade-right">
+              <div class="timeline__event__icon">
+                <i class="bi bi-book"></i>
+
+              </div>
+              <div class="timeline__event__date">
+                04-11-2022
+              </div>
+              <div class="timeline__event__content">
+                <div class="timeline__event__title">
+                  It technician
+                </div>
+                <div class="timeline__event__description">
+                  <p>I had my degree as an IT technician from OFPPT Ntic 1 by learning algorithms, back end and front
+                    end languages in Casablanca Morocco</p>
+                </div>
+              </div>
+            </div>
+            <div class="timeline__event animated fadeInUp delay-1s timeline__event--type3" data-aos="fade-left">
+              <div class="timeline__event__icon">
+                <i class="bi bi-person-workspace"></i>
+
+              </div>
+              <div class="timeline__event__date">
+                12-08-2022 <br>01/04/2023
+              </div>
+              <div class="timeline__event__content">
+                <div class="timeline__event__title">
+                  EasySystem
+                </div>
+                <div class="timeline__event__description_Small">
+                  <p>Intership / .NET developer </p>
+                </div>
+                <div class="timeline__event__description">
+                  <p>I cater to customer needs by personally crafting solutions tailored to technical challenges using
+                    my expertise in C#, ASP.NET MVC, HTML, CSS, JavaScript, jQuery, Ajax, and Bootstrap.</p>
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+
+            <div class="timeline__event  animated fadeInUp delay-3s timeline__event--type1" data-aos="fade-right">
+              <div class="timeline__event__icon ">
+                <i class="bi bi-person-workspace"></i>
+
+              </div>
+              <div class="timeline__event__date">
+                02-04-2023<br>Current
+              </div>
+              <div class="timeline__event__content ">
+                <div class="timeline__event__title">
+                  EasySystem
+                </div>
+                <div class="timeline__event__description_Small">
+                  <p>Full time /full-stack Software developer</p>
+                </div>
+                <div class="timeline__event__description">
+                  <p>I address customer needs by crafting tailored solutions using C#, ASP.NET MVC, HTML, CSS, and
+                    JavaScript. I manage data efficiently with SQL Server, Entity Framework, and LINQEF. I ensure
+                    seamless integration and testing using Git, GitHub, Postman, and AJAX.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--   ______________________________________________Project part______________________________________________  -->
+
+
+        <div class="complete-project-part" id="Project-part">
+          <div class="tittle-services" data-aos="fade">
+            <h4><strong>Completed Project</strong></h4>
+          </div>
+
+          <div class="cards-contianer">
+            <div class="cards-project">
+              <div class="swiper mySwiper card" id="project-card" data-aos="fade-left">
+                <div class="swiper-wrapper imgs-card">
+                  <img class="swiper-slide card-img" src="/img/jt image.png" alt="" id="JtImage1">
+                  <img class="swiper-slide card-img" src="/img/jt authentification.png" alt="" id="JtImage2">
+                  <img class="swiper-slide card-img" src="/img/jt image2.png" alt="" id="JtImage3">
+                  <img class="swiper-slide card-img" src="/img/jt image 3.png" alt="" id="JtImage4">
+                  <img class="swiper-slide card-img" src="/img/jt image 4.png" alt="" id="JtImage5">
+                  <img class="swiper-slide card-img" src="/img/jt image 5.png" alt="" id="JtImage6">
+                  <img class="swiper-slide card-img" src="/img/jt image 6.png" alt="" id="JtImage7">
+                  <img class="swiper-slide card-img" src="/img/jt image 7.png" alt="" id="JtImage8">
+                </div>
+                <div class="swiper-pagination"></div>
+                <h2 class="card-tittle" id="Project_Card_Title"><strong>JELOUANE TRAVAUX</strong></h2>
+                <p class="card-body">In collaboration with JelouaneTravaux, a Windows application was developed for the
+                  creation and storage of painting projects. The application was built using the C# programming language
+                  and utilizes SQL Server for its database.</p>
+              </div>
+
+
+              <div class="swiper mySwiper card" id="project-card" data-aos="fade-left">
+                <div class="swiper-wrapper imgs-card">
+                  <img class="swiper-slide card-img" src="/img/winapp image 1.png" alt="" id="WinAppImage1">
+                  <img class="swiper-slide card-img" src="/img/winapp image 3.png" alt="" id="WinAppImage2">
+                  <img class="swiper-slide card-img" src="/img/winapp image 2.png" alt="" id="WinAppImage3">
+                  <img class="swiper-slide card-img" src="/img/winapp image 4.png" alt="" id="WinAppImage4">
+                  <img class="swiper-slide card-img" src="/img/winapp image 5.png" alt="" id="WinAppImage5">
+                </div>
+                <div class="swiper-pagination"></div>
+                <h2 class="card-tittle"><strong>WINApp</strong></h2>
+                <p class="card-body">This is a Windows-based application designed to facilitate the downloading of apps
+                  for users and the uploading of apps for developers. It was created using the C# programming language,
+                  and the SQL Server programming language was used to build the database.</p>
+              </div>
+
+              <div class="swiper mySwiper card" id="project-card" data-aos="fade-left">
+                <div class="swiper-wrapper imgs-card">
+                  <img class="swiper-slide card-img" src="img/passgurd img4.png" alt="" id="PassGuardImage">
+                  <img class="swiper-slide card-img" src="img/passgurd img3.png" alt="" id="PassGuardImage2">
+                  <img class="swiper-slide card-img" src="img/passgurd img 2.png" alt="" id="PassGuardImage3">
+                  <img class="swiper-slide card-img" src="img/passgurd img1.png" alt="" id="PassGuardImage4">
+                </div>
+                <div class="swiper-pagination"></div>
+                <h2 class="card-tittle"><strong>PassGuard</strong></h2>
+                <p class="card-body">
+                  This solution enables users to create and securely store strong, unpredictable passwords, safeguarding
+                  against malware threats. Developed using HTML, CSS, Bootstrap, ASP.NET MVC, JavaScript, jQuery,
+                  React.js, and SQL Server. For further details, visit www.Pass-guard.com.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          var swiper = new Swiper(".mySwiper", {
+            effect: "flip",
+            grabCursor: true,
+            pagination: {
+              el: ".swiper-pagination",
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+
+
+        </script>
+
+
+        <!--   ______________________________________________Recommendations part______________________________________________  -->
+
+
+        <div class="swiper mySwiper1 recommendation-container" id="Recommendations-part" data-aos="flip-up">
+          <div class="tittle-services">
+            <h4><strong>Recommendations</strong></h4>
+          </div>
+
+          <div class="swiper-wrapper Recommendations-cards">
+            <div class="swiper-slide" id="card-Recommendations-container">
+              <img src="/img/profile2.jpg" alt="">
+              <div class="name-profession">
+                <h2 class="card-profession-tittle"><strong>Othmane *****</strong></h2>
+                <p>Entrepreneur</p>
+              </div>
+              <p class="card-body">I had the pleasure of working with a highly ambitious and professional person, and I
+                look forward to collaborating with Alae again in the future. He proactively put forward new ideas and
+                suggested innovative approaches.</p>
+
+              <div class="etoile">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+
+              </div>
+            </div>
+
+
+
+            <div class="swiper-slide" id="card-Recommendations-container" style="width: 60%">
+              <img src="/img/profile1.png" style="font-size:10rem">
+              <div class="name-profession">
+                <h2 class="card-profession-tittle"><strong>JELOUANE Marouane</strong></h2>
+                <p>Entrepreneur</p>
+              </div>
+              <p class="card-body">It has been a delightful experience collaborating with Alae, the project was about
+                developing an app to manage my services (JT) ,I am extremely satisfied with the level of assistance
+                provided by Alae and cannot thank him enough.</p>
+
+              <div class="etoile">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+
+
+            <div class="swiper-slide" id="card-Recommendations-container" style="width: 60%">
+              <img src="/img/Profile3.png" style="font-size:10rem">
+              <div class="name-profession">
+                <h2 class="card-profession-tittle"><strong>Elmehdi KACHOUR</strong></h2>
+                <p>Front-End Developer</p>
+              </div>
+              <p class="card-body">I had the pleasure of teaming up with Alae JELOUANE not only at Easy System 3000 but
+                also on a cool freelance project. Alaa is more than just a co-worker; he's the kind of teammate who
+                makes work feel like a breeze. His friendly and collaborative nature turns every project into a fun
+                adventure.
+                During my time at Easy System 3000, Alaa was the go-to person who made my integration into the team a
+                breeze. I can't thank him enough for the support and good times we shared.
+                Wishing Alaa a future filled with coding triumphs and all the best in life! He's not just a fantastic
+                developer but an awesome person to have on your team.F</p>
+
+              <div class="etoile">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="swiper-pagination1"></div>
+        </div>
+
+
+        <!--   ______________________________________________Contact us part______________________________________________  -->
+
+
+        <div class="contact-us-part" id="Contact-part">
+          <div class="contact-us-container">
+            <div class="tittle-services" data-aos="fade">
+              <h4><strong>Contact information</strong></h4>
+            </div>
+
+            <div class="contact-us-cards">
+              <div class="card" data-aos="fade">
+                <div class="card-body contact-us-body-card">
+                  <p class="card-text contact-us-card-left-info">Country: <span
+                      class="contact-us-card-right-info">Morocco</span></p>
+                  <p class="card-text contact-us-card-left-info">City: <span
+                      class="contact-us-card-right-info">Casablanca</span></p>
+                  <p class="card-text contact-us-card-left-info">Street: <span
+                      class="contact-us-card-right-info">Lissasfa Residence khouzama </span></p>
+                </div>
+              </div>
+
+              <div class="card" data-aos="fade">
+                <div class="card-body contact-us-body-card">
+                  <p class="card-text contact-us-card-left-info">Email: <span
+                      class="contact-us-card-right-info">jelouanealae.job@gmail.com</span></p>
+                  <p class="card-text contact-us-card-left-info">Support service: <span
+                      class="contact-us-card-right-info">+212 632******</span></p>
+                  <!-- <p class="card-text contact-us-card-left-info">Personal: <span class="contact-us-card-right-info" >+212 632-716448</span></p> -->
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+        <!--   ______________________________________________Get in touch part______________________________________________  -->
+
+
+        <div class="get-in-touch-container" id="get-in-touch-container">
+          <div class="contact-us-container">
+            <div class="tittle-services" data-aos="fade">
+              <h4 class="tracking-in-expand"><strong>Get in touch</strong></h4>
+            </div>
+
+            <div action="" class="get-in-touch-form" method="post">
+              <div class="container-form">
+                <div class="group-from" data-aos="flip-up">
+                  <i class="bi bi-person-fill" id="get-in-touch-icon1"></i>
+                  <input type="text" class="get-in-touch-input1" id="txtname" placeholder="Name">
+
+                </div>
+                <p id="errorName" class="errorNullMessage">name can't be null</p>
+
+                <div class="group-from" data-aos="flip-up">
+                  <i class="bi bi-envelope-at-fill" id="get-in-touch-icon2"></i>
+                  <input type="text" class="get-in-touch-input2" id="txtEmail" placeholder="Email">
+                </div>
+
+                <p id="errorEmail" class="errorNullMessage">Email can't be null</p>
+
+                <div class="group-from" data-aos="flip-up">
+                  <i class="bi bi-chat-right-dots-fill" id="get-in-touch-icon3"></i>
+                  <textarea id="txtMessage" cols="30" rows="10" placeholder="Message"
+                    class="get-in-touch-input3"></textarea>
+                </div>
+                <p id="errorMessage" class="errorNullMessage">Message can't be null</p>
+
+                <button class="-get-in-touch">Send message</button>
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+
+
+          <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.0/dist/locomotive-scroll.min.js"></script>
+          <script>
+            var swiper = new Swiper(".mySwiper1", {
+              effect: "coverflow",
+              grabCursor: true,
+              centeredSlides: true,
+              slidesPerView: "auto",
+              coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+              },
+              pagination: {
+                el: ".swiper-pagination1",
+              },
+            });
+
+
+
+
+          </script>
+
+
+        </div>
+
+        <div class="page-footer">
+          <h5>© 2024 All Rights Reserved.</h5>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <nav class="right-part" data-aos="flip-right" data-aos-duration>
+      <div class="navbar-header">
+        <button class="navbar-button"><i class="bi bi-list" id="navbar-button-icon"></i></button>
+      </div>
+      <!-- <div class="menu-tittle">
+          <h2>MENU</h2>
+        </div> -->
+      <div class="navbar-container">
+        <ul class="list-menu">
+          <li class="navbar-link"><a href="#page">HOME</a></li>
+          <li class="navbar-link"><a href="#Services-part">SERVICES</a></li>
+          <li class="navbar-link"><a href="#Project-part">PROJECTS</a></li>
+          <li class="navbar-link"><a href="#Education-part">WORK</a></li>
+          <li class="navbar-link"><a href="#Contact-part">CONTACT</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      AOS.init(
+        { once: true, duration: 700 }
+      );
+    </script>
+
+
+    <script src="/Scrpit/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mattboldt/typed.js@master/lib/typed.min.js"></script>
+
+</body>
+
+</html>

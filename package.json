@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bootstrap-select": "^1.13.18",
+    "smtp-client": "^0.4.0"
+  }
+}
