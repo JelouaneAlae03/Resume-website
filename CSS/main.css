@@ -991,7 +991,6 @@ li {
 }
 
 .cards-contianer {
-  max-width: 74rem;
   box-sizing: border-box;
   position: relative;
 }
