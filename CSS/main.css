@@ -432,7 +432,7 @@ li {
 }
 
 .text-header {
-  padding: 2rem 5rem;
+  padding: 0rem 3rem;
   position: absolute;
   top: 0;
   display: flex;
@@ -912,6 +912,21 @@ li {
   .text-header h2 {
     font-size: 2.4rem;
   }
+}
+
+
+@media (min-width: 1200px) {
+  .text-header {
+    align-items: center;
+    width: 65vw;
+    height: 12%;
+    justify-content: space-between;
+  }
+
+  .text-header >h2{
+    font-size: 4.5rem !important;
+  }
+
 }
 
 .Education {
